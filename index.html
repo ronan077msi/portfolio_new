@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ronan_portfolio</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- Favicon classique -->
+	<link rel="icon" href="assets/img/favicon.png" type="image/png">
+<!-- Option pour Apple et mobiles -->
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon.png">
+
+<style>
+	body > *:not(.floating-shapes) {
+		position: relative;
+		z-index: 2;
+	}
+</style>
+</head>
+<body class="bg-secondary-subtle">
+
+<!-- Shapes flottants dans le background -->
+<div class="floating-shapes">
+	<span class="shape"></span>
+	<span class="shape"></span>
+	<span class="shape"></span>
+	<span class="shape"></span>
+	<span class="shape"></span>
+	<span class="shape"></span>
+</div>
+
+
+<!-- Section navbar -->
+<nav class="navbar navbar-expand-lg bg-transparent fixed-top">
+	<div class="container-fluid">
+
+		<!-- Liens version desktop -->
+		<div class="collapse navbar-collapse show justify-content-end" id="navbarNav">
+			<ul class="navbar-nav align-items-center d-none d-lg-flex">
+				<li class="nav-item"><a class="nav-link active" href="#welcome">Accueil</a></li>
+				<li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+				<li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+				<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+			</ul>
+
+			<!-- Liens version mobile -->
+			<ul class="navbar-nav flex-row justify-content-center align-items-center d-lg-none mobile-icons">
+				<li class="nav-item"><a class="nav-link" href="#welcome"><i class="bi bi-house-door-fill"></i></a></li>
+				<li class="nav-item"><a class="nav-link" href="#services"><i class="bi bi-gear-fill"></i></a></li>
+				<li class="nav-item"><a class="nav-link" href="#about"><i class="bi bi-person-circle"></i></a></li>
+				<li class="nav-item"><a class="nav-link" href="#contact"><i class="bi bi-envelope-fill"></i></a></li>
+			</ul>
+
+		</div>
+	</div>
+</nav>
+
+
+<!-- Section Bienvenue -->
+<section id="welcome" class="py-5 text-center">
+	<div class="container">
+		<!-- Texte -->
+		<h1 class="display-4 fw-bold mb-3 animate-h1">Bienvenue dans le portfolio de Ronan_077</h1>
+		<p class="lead">Je suis un <span class="typed" data-typed-items="Développeur Web, Formateur Informatique, Designer Graphique"></span></p>
+
+		<!-- Image + Icônes flottantes -->
+		<div class="hero-visual mt-5" data-aos="fade-up" data-aos-delay="200">
+			<div class="profile-container position-relative d-inline-block mx-auto">
+				<!-- Fond flou -->
+				<div class="profile-background"></div>
+
+				<!-- Image carrée -->
+				<div class="modern-profile-wrapper">
+					<img src="assets/img/profile-2.webp" alt="Ronan Andriamahenitsoa" class="modern-profile-image img-fluid">
+				</div>
+
+				<!-- 3 Icônes à gauche -->
+				<div class="floating-icons-left">
+					<div class="float-icon" data-aos="fade-right" data-aos-delay="300"><i class="fas fa-code"></i></div>
+					<div class="float-icon" data-aos="fade-right" data-aos-delay="400"><i class="fas fa-palette"></i></div>
+					<div class="float-icon" data-aos="fade-right" data-aos-delay="500"><i class="fas fa-chalkboard-teacher"></i></div>
+				</div>
+
+				<!-- 3 Icônes à droite -->
+				<div class="floating-icons-right">
+					<div class="float-icon" data-aos="fade-left" data-aos-delay="300"><i class="fas fa-cogs"></i></div>
+					<div class="float-icon" data-aos="fade-left" data-aos-delay="400"><i class="fab fa-bootstrap"></i></div>
+					<div class="float-icon" data-aos="fade-left" data-aos-delay="500"><i class="fas fa-bullhorn"></i></div>
+				</div>
+			</div>
+
+			<!-- Description -->
+			<p class="description mt-4 mx-auto">
+				J’ai 19 ans et je suis en 2ème année de gestion. Passionné par la technologie et la création numérique, je combine design, développement et stratégie pour créer des projets modernes et accessibles.
+			</p>
+		</div>
+	</div>
+</section>
+
+<!-- Section About -->
+<section id="about" class="py-5 text-center d-flex align-items-center">
+	<div class="container">
+		<div class="row justify-content-center align-items-center g-5">
+
+			<!-- Texte À propos -->
+			<div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
+				<div class="about-content mx-auto">
+
+					<div class="section-header mb-4">
+						<span class="badge-text d-inline-block mb-2">Qui suis-je ?</span>
+						<h2 class="mt-2 fw-bold">
+							19 ans, étudiant en gestion, passionné par le web et le graphisme
+						</h2>
+					</div>
+
+					<div class="description mx-auto" style="max-width: 700px;">
+						<p>
+							Je crée des projets numériques qui allient design moderne et solutions fonctionnelles.
+							Avec MSI, je développe des sites web, des visuels et des stratégies digitales adaptés
+							aux besoins réels des clients.
+						</p>
+						<p>
+							Curieux et ambitieux, je cherche toujours à apprendre, expérimenter et améliorer mes
+							compétences pour offrir des expériences digitales uniques et accessibles à tous.
+						</p>
+					</div>
+
+					<div class="details-grid mt-4 mx-auto" style="max-width: 600px;">
+						<div class="detail-row d-flex flex-column flex-md-row justify-content-center text-center text-md-start gap-3">
+							<div class="detail-item w-100 w-md-50">
+								<span class="detail-label fw-semibold d-block">Spécialisation</span>
+								<span class="detail-value">Développement Web &amp; Graphisme</span>
+							</div>
+							<div class="detail-item w-100 w-md-50">
+								<span class="detail-label fw-semibold d-block">Niveau d’expérience</span>
+								<span class="detail-value">Junior / Étudiant ambitieux</span>
+							</div>
+						</div>
+
+						<div class="detail-row d-flex flex-column flex-md-row justify-content-center text-center text-md-start gap-3 mt-3">
+							<div class="detail-item w-100 w-md-50">
+								<span class="detail-label fw-semibold d-block">Éducation</span>
+								<span class="detail-value">Licence 2 Gestion, ONIFRA Moramanga</span>
+							</div>
+							<div class="detail-item w-100 w-md-50">
+								<span class="detail-label fw-semibold d-block">Langues</span>
+								<span class="detail-value">Malagasy, Français, Anglais</span>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<!-- Section Profil -->
+<section id="profile" class="py-5">
+	<div class="container">
+		<div class="row justify-content-center align-items-center">
+			<div class="col-lg-5" data-aos="zoom-in" data-aos-delay="200">
+				<div class="profile-card-modern shadow-lg rounded-4 p-4 text-center position-relative overflow-hidden">
+
+					<!-- Fond décoratif flou -->
+					<div class="card-bg-effect"></div>
+
+					<!-- Image moderne -->
+					<div class="profile-image-wrapper position-relative d-inline-block mb-4">
+						<img src="assets/img/profile-square-3.webp" alt="Ronan Andriamahenitsoa" class="profile-image-modern img-fluid">
+						<div class="online-badge position-absolute bottom-0 end-0 translate-middle-x">
+							<i class="bi bi-check-circle-fill"></i>
+						</div>
+					</div>
+
+					<!-- Infos -->
+					<h3 class="fw-bold mb-1 text-dark">Ronan Andriamahenitsoa</h3>
+					<p class="profession text-dark mb-4 fw-medium">Développeur Web &amp; Designer</p>
+
+					<!-- Contacts -->
+					<div class="contact-links d-flex flex-column gap-3 mb-4">
+						<a href="mailto:ronan077msi@gmail.com" class="contact-link d-flex align-items-center justify-content-start gap-3 text-decoration-none">
+							<div class="icon-circle contact-icon"><i class="bi bi-envelope"></i></div>
+							<span class="contact-text">ronan077msi@gmail.com</span>
+						</a>
+						<a href="tel:+261381154220" class="contact-link d-flex align-items-center justify-content-start gap-3 text-decoration-none">
+							<div class="icon-circle contact-icon"><i class="bi bi-telephone"></i></div>
+							<span class="contact-text">+261 38 11 542 20</span>
+						</a>
+						<a href="#" class="contact-link d-flex align-items-center justify-content-start gap-3 text-decoration-none">
+							<div class="icon-circle contact-icon"><i class="bi bi-geo-alt"></i></div>
+							<span class="contact-text">Ambohitranjavidy, Moramanga</span>
+						</a>
+					</div>
+
+					<!-- === RÉSEAUX SOCIAUX === -->
+					<div class="social-links d-flex justify-content-center gap-3">
+						<a href="https://github.com/ronan077msi" target="_blank" class="social-icon-bw" title="GitHub">
+							<i class="fab fa-github"></i>
+						</a>
+						<a href="https://www.facebook.com/ronan.andriamahenitsoa.5" target="_blank" class="social-icon-bw" title="Facebook">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+						<a href="https://www.instagram.com/ronan_077/?fbclid=IwY2xjawNTMX9leHRuA2FlbQIxMABicmlkETFsOXUwMjQ5UzNoYm5vbmd0AR54un6J9jbq3oK5TsA6osBEBSpt8YNlDic2Na2ZH9YEjWVbKwMXWLSPMGDw8A_aem_ihdxXs3qSSZxlcf0lhzylg" target="_blank" class="social-icon-bw" title="Instagram">
+							<i class="fab fa-instagram"></i>
+						</a>
+						<a href="https://linkedin.com/in/ronan-andriamahenitsoa" target="_blank" class="social-icon-bw" title="LinkedIn">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Section compétences -->
+<section id="skills" class="py-5">
+	<div class="container">
+		<!-- Titre section -->
+		<div class="text-center mb-5" data-aos="fade-up">
+			<span class="badge-text d-inline-block mb-3">Mes Compétences</span>
+			<h2 class="fw-bold">Développement Web et d'autres compétences</h2>
+		</div>
+
+		<div class="row justify-content-center">
+			<!-- Colonne 1 : Graphisme -->
+			<div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+				<div class="skills-category">
+					<h3 class="fw-bold mb-4">Développement Web</h3>
+					<div class="skills-animation">
+						<div class="skill-item mb-4">
+							<div class="d-flex justify-content-between align-items-center mb-2">
+								<h4 class="fw-semibold">Front-End</h4>
+								<span class="skill-percentage">85%</span>
+							</div>
+							<div class="progress modern-progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+							<div class="skill-tooltip">
+								Développement d’interfaces interactives et responsives
+							</div>
+						</div>
+
+						<div class="skill-item mb-4">
+							<div class="d-flex justify-content-between align-items-center mb-2">
+								<h4 class="fw-semibold">Back-End</h4>
+								<span class="skill-percentage">70%</span>
+							</div>
+							<div class="progress modern-progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+							<div class="skill-tooltip">
+								Développement côté serveur avec Node.js et Express.js
+							</div>
+						</div>
+
+						<div class="skill-item mb-4">
+							<div class="d-flex justify-content-between align-items-center mb-2">
+								<h4 class="fw-semibold">Data Base</h4>
+								<span class="skill-percentage">75%</span>
+							</div>
+							<div class="progress modern-progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+							<div class="skill-tooltip">
+								Gestion et conception de bases de données avec MySQL et MariaDB 
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- Colonne 2 : Développement & Autres -->
+			<div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+				<div class="skills-category">
+					<h3 class="fw-bold mb-4">Autres compétences</h3>
+					<div class="skills-animation">
+						<div class="skill-item mb-4">
+							<div class="d-flex justify-content-between align-items-center mb-2">
+								<h4 class="fw-semibold">Maintenance IT</h4>
+								<span class="skill-percentage">80%</span>
+							</div>
+							<div class="progress modern-progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+							<div class="skill-tooltip">
+								maintenance software/hardware
+							</div>
+						</div>
+
+						<div class="skill-item mb-4">
+							<div class="d-flex justify-content-between align-items-center mb-2">
+								<h4 class="fw-semibold">Marketing Digital</h4>
+								<span class="skill-percentage">75%</span>
+							</div>
+							<div class="progress modern-progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+							<div class="skill-tooltip">
+								Stratégies réseaux sociaux, publicité et branding
+							</div>
+						</div>
+
+						<div class="skill-item">
+							<div class="d-flex justify-content-between align-items-center mb-2">
+								<h4 class="fw-semibold">Bureautique</h4>
+								<span class="skill-percentage">85%</span>
+							</div>
+							<div class="progress modern-progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+							<div class="skill-tooltip">
+								Word, Excel, et Powerpoint
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Section Expériences / Stages -->
+<section id="experience" class="py-5">
+	<div class="container">
+		<!-- Titre section -->
+		<div class="text-center mb-5" data-aos="fade-up">
+			<span class="badge-text d-inline-block mb-3">Mon Parcours</span>
+			<h2 class="fw-bold">Expériences & Stages</h2>
+		</div>
+
+		<div class="row g-4">
+			<!-- Expérience 1 -->
+			<div class="col-md-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+				<div class="experience-card p-4 shadow-sm rounded-4 position-relative">
+					<h4 class="fw-bold mb-2">Développement Web</h4>
+					<span class="text-muted mb-2 d-block">Gasi'Pro – Moramanga, 2025</span>
+					<p>
+						Développement complet front-end et back-end avec HTML, CSS, JavaScript, express.js, et gestion des données avec MySQL.
+					</p>
+					<ul class="mb-0 ps-3">
+						<li>Conception d’interfaces utilisateurs attractives et responsive</li>
+						<li>Intégration front-end et back-end</li>
+						<li>Déploiement et gestion de base de données pour le suivi des scores</li>
+					</ul>
+				</div>
+			</div>
+
+
+			<!-- Expérience 2 -->
+			<div class="col-md-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+				<div class="experience-card p-4 shadow-sm rounded-4 position-relative">
+					<h4 class="fw-bold mb-2">Graphisme & Branding</h4>
+					<span class="text-muted mb-2 d-block">Client indépendant avec MSI – 2025</span>
+					<p>
+						Réalisation de visuels pour clients et promotion MSI. Conception de flyers, logos et publications réseaux sociaux.
+					</p>
+					<ul class="mb-0 ps-3">
+						<li>Maîtrise de Photoshop et Illustrator</li>
+						<li>Création de visuels adaptés aux besoins du client</li>
+						<li>Gestion du temps et organisation de plusieurs projets simultanément</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Expérience 3 -->
+			<div class="col-md-6" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+				<div class="experience-card p-4 shadow-sm rounded-4 position-relative">
+					<h4 class="fw-bold mb-2">Assistance & Support Informatique</h4>
+					<span class="text-muted mb-2 d-block">MSI - 2025</span>
+					<p>
+						Support technique pour les clients. Installation de logiciels, résolution de bugs et maintenance hardware.
+					</p>
+					<ul class="mb-0 ps-3">
+						<li>Maintenance software & hardware</li>
+						<li>Support technique pour utilisateurs</li>
+						<li>Renforcement des compétences en communication et pédagogie</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Expérience 4 -->
+			<div class="col-md-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+				<div class="experience-card p-4 shadow-sm rounded-4 position-relative">
+					<h4 class="fw-bold mb-2">Formateur & Support Informatique</h4>
+					<span class="text-muted mb-2 d-block">MSI & CFM Betambako – 2025</span>
+					<p>
+						Formation et accompagnement. Intervention sur la bureautique, le développement web, le graphisme et la maintenance informatique.
+					</p>
+					<ul class="mb-0 ps-3">
+						<li>formations pratiques en bureautique, web et graphisme</li>
+						<li>Support technique et dépannage software/hardware</li>
+						<li>Renforcement des compétences pédagogiques et communicationnelles</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="projects" class="py-5">
+	<div class="container">
+		<div class="text-center mb-5" data-aos="fade-up">
+			<span class="badge-text d-inline-block mb-3">Mes Projets</span>
+			<h2 class="fw-bold">Réalisations</h2>
+		</div>
+		<div class="row g-4">
+			<div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+				<div class="project-card shadow-sm rounded-4 overflow-hidden">
+					<img src="assets/img/project1.webp" class="img-fluid" alt="Projet 1">
+					<div class="p-3">
+						<h5 class="fw-bold">Site Web Gasi’Pro</h5>
+						<p>Développement complet front-end, back-end, et database avec express.js, Node.js, et Mariadb.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+				<div class="project-card shadow-sm rounded-4 overflow-hidden">
+					<img src="assets/img/flyers-1.webp" class="img-fluid" alt="Projet-2">
+					<div class="p-3">
+						<h5 class="fw-bold">Flyers Gasi’Pro</h5>
+						<p>Conception et création de flyers et visuels graphiques pour Gasi’Pro.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+				<div class="project-card shadow-sm rounded-4 overflow-hidden">
+					<img src="assets/img/flyers-22-post.webp" class="img-fluid" alt="Projet-2">
+					<div class="p-3">
+						<h5 class="fw-bold">Formateur Informatique</h5>
+						<p>En développement web, graphisme et maintenance chez CFM, MSI et Gasi’Pro.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Section Mes Services et Offres -->
+	<section id="services" class="py-5">
+		<div class="container">
+			<!-- Titre de la section -->
+			<div class="text-center mb-5" data-aos="fade-up">
+				<span class="badge-text d-inline-block mb-3">Mes Services</span>
+				<h2 class="fw-bold">Mes Offres & Tarifs</h2>
+			</div>
+
+			<div class="row g-4">
+				<!-- Service 1 : Développement Web -->
+				<div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+					<div class="service-card shadow-sm rounded-4 p-4 text-center h-100">
+						<div class="service-icon mb-3">
+							<i class="fas fa-code fa-2x"></i>
+						</div>
+						<h5 class="fw-bold">Site Vitrine</h5>
+						<p>Création d’un site vitrine professionnel et responsive, front-end et back-end léger.</p>
+						<p class="fw-bold text-secondary">À partir de 250.000 Ar (hors hébergement)</p>
+						<a href="#contact" class="btn btn-dark btn-sm mt-2">Demander ce service</a>
+					</div>
+				</div>
+
+				<!-- Service 2 : Développement Web + e-commerce -->
+				<div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+					<div class="service-card shadow-sm rounded-4 p-4 text-center h-100">
+						<div class="service-icon mb-3">
+							<i class="fas fa-shopping-cart fa-2x"></i>
+						</div>
+						<h5 class="fw-bold">Site e-Commerce</h5>
+						<p>Site complet avec gestion de produits, panier, paiement en ligne et base de données.</p>
+						<p class="fw-bold text-secondary">À partir de 450.000 Ar (hors hébergement)</p>
+						<a href="#contact" class="btn btn-dark btn-sm mt-2">Demander ce service</a>
+					</div>
+				</div>
+
+				<!-- Service 3 : Graphisme & Design -->
+				<div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+					<div class="service-card shadow-sm rounded-4 p-4 text-center h-100">
+						<div class="service-icon mb-3">
+							<i class="fas fa-palette fa-2x"></i>
+						</div>
+						<h5 class="fw-bold">Flyers & Visuels</h5>
+						<p>Conception et création de flyers, affiches et visuels graphiques attractifs.</p>
+						<p class="fw-bold text-secondary">À partir de 10.000 Ar / visuel</p>
+						<a href="#contact" class="btn btn-dark btn-sm mt-2">Demander ce service</a>
+					</div>
+				</div>
+
+				<!-- Service 4 : Formation & Support -->
+				<div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="400">
+					<div class="service-card shadow-sm rounded-4 p-4 text-center h-100">
+						<div class="service-icon mb-3">
+							<i class="fas fa-chalkboard-teacher fa-2x"></i>
+						</div>
+						<h5 class="fw-bold">Formation Informatique</h5>
+						<p>Formations en développement web, graphisme et maintenance informatique.</p>
+						<p class="fw-bold text-secondary">À partir de 80.000 Ar selons le  module</p>
+						<a href="#contact" class="btn btn-dark btn-sm mt-2">Demander ce service</a>
+					</div>
+				</div>
+
+				<!-- Service 5 : Portfolio / Réalisations -->
+				<div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="500">
+					<div class="service-card shadow-sm rounded-4 p-4 text-center h-100">
+						<div class="service-icon mb-3">
+							<i class="fas fa-folder-open fa-2x"></i>
+						</div>
+						<h5 class="fw-bold">Site portfolio</h5>
+						<p>Création et mise en valeur de vos projets numériques pour un portfolio professionnel.</p>
+						<p class="fw-bold text-secondary">À partir de 120.000 Ar (hors hébergement)</p>
+						<a href="#contact" class="btn btn-dark btn-sm mt-2">Demander ce service</a>
+					</div>
+				</div>
+
+				<!-- Service 6 : Dépannage & Support -->
+				<div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="600">
+					<div class="service-card shadow-sm rounded-4 p-4 text-center h-100">
+						<div class="service-icon mb-3">
+							<i class="fas fa-tools fa-2x"></i>
+						</div>
+						<h5 class="fw-bold">Dépannage & Support</h5>
+						<p>Assistance informatique : maintenance software/hardware et résolution de bugs.</p>
+						<p class="fw-bold text-secondary">À partir de 10.000 Ar selon le problème</p>
+						<a href="#contact" class="btn btn-dark btn-sm mt-2">Demander ce service</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Section FAQ -->
+	<section id="faq" class="py-5">
+		<div class="container">
+			<div class="text-center mb-5" data-aos="fade-up">
+				<span class="badge-text d-inline-block mb-3">FAQ</span>
+				<h2 class="fw-bold">Questions fréquentes</h2>
+			</div>
+
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<div class="accordion" id="faqAccordion">
+
+						<!-- Question 1 -->
+						<div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+							<h2 class="accordion-header" id="faqHeadingOne">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="false" aria-controls="faqCollapseOne">
+									Comment se déroule la collaboration ou la commande d’un service ?
+								</button>
+							</h2>
+							<div id="faqCollapseOne" class="accordion-collapse collapse" aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
+								<div class="accordion-body">
+									Il suffit de me contacter directement via mes réseaux ou par téléphone pour discuter du projet et convenir d’un devis clair.
+								</div>
+							</div>
+
+							<!-- Question 2 -->
+							<div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+								<h2 class="accordion-header" id="faqHeadingTwo">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+										Quels sont les délais de réalisation ?
+									</button>
+								</h2>
+								<div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
+									<div class="accordion-body">
+										Les délais varient selon le service : de 2 à 7 jours en moyenne pour un projet standard.
+									</div>
+								</div>
+							</div>
+
+							<!-- Question 3 -->
+							<div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+								<h2 class="accordion-header" id="faqHeadingThree">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+										Combien de temps pour réaliser un projet ?
+									</button>
+								</h2>
+								<div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#faqAccordion">
+									<div class="accordion-body">
+										Le délai dépend de la complexité du projet. Un site vitrine simple peut être livré en 1 à 2 semaines, un projet plus complexe peut prendre plusieurs semaines.
+									</div>
+								</div>
+							</div>
+
+							<!-- Question 4 -->
+							<div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+								<h2 class="accordion-header" id="faqHeadingFour">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+										Offrez-vous un support après la livraison ?
+									</button>
+								</h2>
+								<div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour" data-bs-parent="#faqAccordion">
+									<div class="accordion-body">
+										Oui, je propose un support technique et des conseils pour maintenir votre site ou vos projets après la livraison.
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" class="py-5">
+			<div class="container text-center">
+				<h2 class="fw-bold mb-4">Contactez-moi</h2>
+				<p class="text-muted mb-5">
+					Disponible pour toute collaboration, création ou assistance informatique.  
+					Réponse rapide garantie !
+				</p>
+
+				<div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-4">
+					<a href="https://wa.me/261381154220" target="_blank" class="contact-card">
+						<i class="bi bi-whatsapp"></i>
+						<span>WhatsApp</span>
+						<small>+261 38 11 542 20</small>
+					</a>
+
+					<a href="tel:+261381154220" class="contact-card">
+						<i class="bi bi-telephone"></i>
+						<span>Téléphone</span>
+						<small>+261 38 11 542 20</small>
+					</a>
+
+					<a href="mailto:ronan077msi@mail.com" class="contact-card">
+						<i class="bi bi-envelope"></i>
+						<span>Email</span>
+						<small>ronan077msi@mail.com</small>
+					</a>
+				</div>
+			</div>
+		</section>
+
+<!-- === Barre de navigation fixe === -->
+<nav class="bottom-nav">
+	<ul class="navbar-nav flex-row justify-content-center align-items-center">
+		<li class="nav-item"><a class="nav-link" href="#welcome" title="Accueil"><i class="bi bi-house-door-fill"></i></a></li>
+		<li class="nav-item"><a class="nav-link" href="#services" title="Services"><i class="bi bi-gear-fill"></i></a></li>
+		<li class="nav-item"><a class="nav-link" href="#about" title="À propos"><i class="bi bi-person-circle"></i></a></li>
+		<li class="nav-item"><a class="nav-link" href="#contact" title="Contact"><i class="bi bi-envelope-fill"></i></a></li>
+	</ul>
+</nav>
+
+<!-- === Footer === -->
+<footer class="footer text-center py-4 mt-5">
+	<div class="container">
+		<h5 class="fw-bold mb-2">Moramanga Services Informatiques</h5>
+		<p class="mb-3">Développement Web • Graphisme • Maintenance • Formation</p>
+
+		<div class="d-flex justify-content-center gap-3 mb-3">
+			<a href="https://github.com/ronan077msi" target="_blank" class="footer-icon"><i class="fab fa-github"></i></a>
+			<a href="https://www.facebook.com/ronan.andriamahenitsoa.5" target="_blank" class="footer-icon"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://www.instagram.com/ronan_077/" target="_blank" class="footer-icon"><i class="fab fa-instagram"></i></a>
+			<a href="https://linkedin.com/in/ronan-andriamahenitsoa" target="_blank" class="footer-icon"><i class="fab fa-linkedin-in"></i></a>
+		</div>
+
+		<p class="small mb-1">
+			&copy; <span id="year"></span> <strong>R_077</strong> – Tous droits réservés.
+		</p>
+		<p class="small mb-0">
+			Site développé et designé par <strong>Ronan Andriamahenitsoa (R_077)</strong>
+		</p>
+	</div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script>
+	window.addEventListener('scroll', function() {
+		const progressBars = document.querySelectorAll('.progress-bar');
+
+		progressBars.forEach(bar => {
+			const barTop = bar.getBoundingClientRect().top;
+			const windowHeight = window.innerHeight;
+
+			if (barTop < windowHeight - 50 && !bar.classList.contains('animated')) {
+				bar.style.width = bar.getAttribute('aria-valuenow') + '%';
+				bar.classList.add('animated');
+			}
+		});
+	});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+	AOS.init({
+		once: true,           
+		easing: 'ease-in-out', 
+		duration: 1000     
+	});
+</script>
+<script>
+	document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
