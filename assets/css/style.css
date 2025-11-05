@@ -59,6 +59,12 @@ body {
 /* ==============================
    Navbar
 ============================== */
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    transition: background-color 0.3s ease;
+}
+
 .navbar {
     padding: 1rem 2rem;
 }
@@ -996,3 +1002,4 @@ to {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+

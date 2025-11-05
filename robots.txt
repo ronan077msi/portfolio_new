@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /assets/
+Allow: /
+
+Sitemap: https://ronan77.netlify.app/sitemap.xml
