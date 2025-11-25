@@ -5,7 +5,7 @@ body {
     padding: 0;
 }
 
-/* --- Shapes flottants (effet fond discret et animé) --- */
+/* --- Shapes --- */
 .floating-shapes {
   position: fixed;
   top: 0;
@@ -14,7 +14,7 @@ body {
   height: 100%;
   overflow: hidden;
   z-index: 0;
-  pointer-events: none; /* empêche toute interaction */
+  pointer-events: none; 
 }
 
 .floating-shapes .shape {
@@ -22,13 +22,12 @@ body {
   display: block;
   width: 40px;
   height: 40px;
-  background: #333; /* noir sombre par défaut */
+  background: #333; 
   border-radius: 50%;
   bottom: -150px;
   animation: floatShape 20s infinite ease-in-out;
 }
 
-/* Position aléatoire et tailles variées, couleurs sobres */
 .floating-shapes .shape:nth-child(1) { left: 15%; animation-delay: 0s; width: 30px; height: 30px; background: #333; }
 .floating-shapes .shape:nth-child(2) { left: 40%; animation-delay: 3s; width: 50px; height: 50px; background: rgba(255,255,255,0.15); }
 .floating-shapes .shape:nth-child(3) { left: 70%; animation-delay: 6s; width: 60px; height: 60px; background: #333; }
@@ -36,7 +35,6 @@ body {
 .floating-shapes .shape:nth-child(5) { left: 10%; animation-delay: 12s; width: 45px; height: 45px; background: #333; }
 .floating-shapes .shape:nth-child(6) { left: 55%; animation-delay: 15s; width: 70px; height: 70px; background: rgba(255,255,255,0.15); }
 
-/* Animation douce */
 @keyframes floatShape {
   0% {
     transform: translateY(0) rotate(0deg);
@@ -139,7 +137,6 @@ body {
   }
 
 
-/* Animation fade-in + slide pour h1 */
 @keyframes fadeSlideIn {
     0% {
         opacity: 0;
@@ -157,7 +154,6 @@ body {
     animation-delay: 0.3s; 
 }
 
-/* description */
 .description {
     text-align: center;
     max-width: 700px;
@@ -194,7 +190,6 @@ body {
     object-fit: cover;
 }
 
-/* Fond flou décoratif */
 .profile-background {
     position: absolute;
     width: 300px;
@@ -209,7 +204,7 @@ body {
     z-index: -1;
 }
 
-/* === ICÔNES FLOTTANTES : 3 GAUCHE / 3 DROITE === */
+/* === ICÔNES FLOTTANTES === */
 .floating-icons-left,
 .floating-icons-right {
     position: absolute;
@@ -258,7 +253,6 @@ body {
     50% { transform: translateY(-12px) scale(1.05); }
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .floating-icons-left { left: -70px; }
     .floating-icons-right { right: -70px; }
@@ -293,7 +287,6 @@ body {
     line-height: 1.3;
 }
 
-/* Grille détails */
 .details-grid {
     display: flex;
     flex-direction: column;
@@ -312,13 +305,13 @@ body {
 }
 
 .detail-label {
- font-family: 'Raleway', sans-serif;
- font-weight: 700; 
- display: block;
- font-weight: 600;
- color: #333;
- font-size: 0.95rem;
- margin-bottom: 4px;
+   font-family: 'Raleway', sans-serif;
+   font-weight: 700; 
+   display: block;
+   font-weight: 600;
+   color: #333;
+   font-size: 0.95rem;
+   margin-bottom: 4px;
 }
 
 .detail-value {
@@ -327,7 +320,7 @@ body {
     font-weight: 500;
 }
 
-/* Responsive */
+
 @media (max-width: 992px) {
     .detail-row {
         flex-direction: column;
@@ -338,7 +331,7 @@ body {
     }
 }
 
-/* === CARD PROFIL MODERNE === */
+/* === CARD === */
 .profile-card-modern {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(12px);
@@ -353,7 +346,6 @@ body {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12) !important;
 }
 
-/* Fond flou décoratif */
 .card-bg-effect {
     position: absolute;
     top: -50%;
@@ -372,7 +364,6 @@ body {
     to { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
-/* Image ronde moderne */
 .profile-image-wrapper {
     width: 160px;
     height: 160px;
@@ -394,7 +385,6 @@ body {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
-/* Badge en ligne */
 .online-badge {
     width: 40px;
     height: 40px;
@@ -409,7 +399,7 @@ body {
     border: 3px solid #fff;
 }
 
-/* === ICÔNES DE CONTACT === */
+/* === CONTACT === */
 .contact-links {
     margin-top: 1rem;
 }
@@ -423,7 +413,7 @@ body {
 }
 
 .contact-link:hover {
-    color: #222; /* Plus foncé que #333 */
+    color: #222;
     transform: translateX(4px);
 }
 
@@ -434,7 +424,6 @@ body {
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Icône ronde */
 .contact-icon {
     width: 40px;
     height: 40px;
@@ -451,10 +440,9 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-/* Texte */
 .contact-text {
     font-family: 'Raleway', sans-serif;
-    color: #555; /* Gris sombre */
+    color: #555; 
     line-height: 1.4;
     transition: color 0.3s ease;
 }
@@ -463,7 +451,6 @@ body {
     color: #222;
 }
 
-/* Responsive */
 @media (max-width: 576px) {
     .contact-icon {
         width: 36px;
@@ -475,7 +462,20 @@ body {
     }
 }
 
-/* === RÉSEAUX SOCIAUX === */
+/* GPU */
+.card-bg-effect {
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+.lazy {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+.lazy.loaded {
+    opacity: 1;
+}
+
 .social-links {
     margin-top: 1.5rem;
 }
@@ -502,7 +502,7 @@ body {
     border: 2px solid #333;
 }
 
-/* === SECTION COMPÉTENCES MODERNE === */
+/* === SECTION COMPÉTENCE === */
 .skills-category h3 {
     color: #333;
     font-family: 'Montserrat', sans-serif;
@@ -512,7 +512,6 @@ body {
     display: inline-block;
 }
 
-/* Barres de progression modernes */
 .modern-progress {
     height: 10px;
     background: #f8f9fa;
@@ -574,7 +573,6 @@ body {
     transform: translateY(-4px);
 }
 
-/* Badge section */
 #skills .badge-text {
     background: #333;
     color: white;
@@ -584,7 +582,6 @@ body {
     font-size: 0.9rem;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .skills-category h3 {
         font-size: 1.3rem;
@@ -594,7 +591,7 @@ body {
     }
 }
 
-/* === SECTION EXPÉRIENCES / STAGES === */
+/* === SECTION EXPÉRIENCES === */
 .experience-card {
     background: #fff;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -631,8 +628,8 @@ body {
     font-size: 0.9rem;
 }
 
-/* === Section Projets / Réalisations === */
-#projects .badge-text {
+/* === Section Projets === */
+#testimonials .badge-text {
   background: #333;
   color: white;
   padding: 8px 20px;
@@ -641,39 +638,56 @@ body {
   font-size: 0.9rem;
 }
 
-.project-card {
-  background-color: #fff;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
+.stars {
+  color: #f39c12;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
 }
 
-.project-card:hover {
+#testimonials .project-card {
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  height: 100%;
+}
+#testimonials .project-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.2);
 }
-
-.project-card img {
+#testimonials .project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
   transition: transform 0.3s ease;
 }
-
-.project-card img {
-    width: 100%;       
-    height: 200px;    
-    object-fit: cover;
-}
-
-
-.project-card:hover img {
+#testimonials .project-card:hover img {
   transform: scale(1.05);
 }
-
-.project-card h5 {
+#testimonials .project-card p {
+  font-size: 0.95rem;
+  color: #6c757d;
+  line-height: 1.5;
+}
+#testimonials .project-card strong {
   color: #343a40;
 }
 
-.project-card p {
-  font-size: 0.9rem;
-  color: #6c757d;
+.whatsapp-btn {
+  background: #333;
+  color: #fff !important;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 3px solid transparent;
+}
+
+.whatsapp-btn:hover {
+  background: #fff;
+  color: #333 !important;
+  transform: translateY(-4px);
+  border: 3px solid #333;
+  text-decoration: none;
 }
 
 /* === Section service === */
@@ -706,14 +720,19 @@ body {
 
 .service-card .btn-dark {
   background-color: #333;
-  border: none;
+  border: 3px solid transparent;
 }
 
 .service-card .btn-dark:hover {
-  background-color: #555;
+  background-color: #fff;
+  color: #333 !important;
+  transform: translateY(-4px);
+  border: 3px solid #333;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-/* === Section FAQ Modern & Elegant (fix flèche) === */
+/* === Section FAQ === */
 #faq {
   padding: 80px 0;
 }
@@ -773,10 +792,10 @@ body {
 }
 
 #faq .accordion-button:not(.collapsed)::after {
-  filter: brightness(0) invert(1); /* rend la flèche blanche */
+  filter: brightness(0) invert(1); 
 }
 
-/* === Corps de la réponse === */
+/* === Corps === */
 #faq .accordion-body {
   background-color: #fff;
   border-radius: 0 0 14px 14px;
@@ -787,7 +806,6 @@ body {
   line-height: 1.7;
 }
 
-/* Animation d’apparition fluide */
 #faq .accordion-item[data-aos] {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -808,7 +826,6 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* Ligne décorative sous le titre */
 #contact h2::after {
   content: "";
   position: absolute;
@@ -821,7 +838,6 @@ body {
   border-radius: 10px;
 }
 
-/* Cartes de contact */
 .contact-card {
   background: #fff;
   color: #333;
@@ -838,7 +854,6 @@ body {
   animation: fadeUp 0.8s ease-out forwards;
 }
 
-/* Délai progressif pour un effet de cascade */
 .contact-card:nth-child(1) { animation-delay: 0.2s; }
 .contact-card:nth-child(2) { animation-delay: 0.4s; }
 .contact-card:nth-child(3) { animation-delay: 0.6s; }
@@ -871,7 +886,6 @@ body {
   color: #fff;
 }
 
-/* Animation douce d’apparition */
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -883,7 +897,6 @@ to {
 }
 }
 
-/* === Barre de navigation fixe bas === */
 .bottom-nav {
   position: fixed;
   bottom: 20px;
@@ -914,11 +927,10 @@ to {
 
 .bottom-nav .nav-link:hover,
 .bottom-nav .nav-link.active {
-  color: #fff;
+  color: #cdcdcd;
   transform: translateY(-3px);
 }
 
-/* Animation d’apparition douce */
 .bottom-nav {
   opacity: 0;
   animation: fadeInNav 0.8s ease-out 0.6s forwards;
@@ -953,7 +965,7 @@ to {
 }
 }
 
-/* === Footer moderne corrigé === */
+/* === Footer === */
 .footer {
     font-family: 'Raleway', sans-serif;
     background: #333; 
@@ -970,8 +982,8 @@ to {
 
 .footer p {
     color: #ccc;
-  margin-bottom: 0.5rem;
-  font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
 }
 
 .footer .footer-icon {
@@ -991,7 +1003,6 @@ to {
   margin-top: 5px;
 }
 
-/* Effet d’apparition légère */
 .footer {
   opacity: 0;
   animation: fadeInFooter 1s ease forwards;
@@ -1003,3 +1014,11 @@ to {
   to { opacity: 1; transform: translateY(0); }
 }
 
+#comeup {
+  color: #333!important;
+}
+#comeup .btn:hover {
+  background:#fff !important;
+  color:#333 !important;
+  transform:translateY(-4px);
+}
