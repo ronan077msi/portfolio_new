@@ -164,7 +164,7 @@ body {
     font-family: 'Montserrat', sans-serif; 
 }
 
-/* === PROFILE IMAGE MODERNE === */
+/* === PROFILE IMG === */
 .profile-container {
     position: relative;
     display: inline-block;
@@ -589,6 +589,16 @@ body {
     .skill-percentage {
         font-size: 0.9rem;
     }
+}
+
+/* === SECTION CV === */
+#cv .badge-text {
+    background: #333;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
 }
 
 /* === SECTION EXPÉRIENCES === */
