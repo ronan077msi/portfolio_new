@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="google-site-verification" content="2owMyfUu9F-dY6R7-usK5JfZrGPSKZwRgD5_pmfVCi4" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Développeur Web & Designer UI/UX – Ronan77 Portfolio</title>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N8K6FRBMQV"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-N8K6FRBMQV');
+</script>
+
+<meta name="description" content="Développeur web et Webmarketeur, Ronan77 transforme votre présence digitale en levier de croissance. Création de sites pro et stratégies webmarketing pour maximiser vos leads.">
+<!-- Fb -->
+<meta property="og:title" content="Ronan Andriamahenitsoa –  Développeur Web et Webmarketeur">
+<meta property="og:description" content="Création de sites web professionnels, plateformes e-learning et design graphique. Découvrez l'expertise de Ronan77 pour une digitalisation réussie et performante.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ronan77.vercel.app/">
+<meta property="og:image" content="https://ronan77.vercel.app//assets/img/og-image.png">
+
+<!-- x Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ronan77 – Portfolio Développeur Web & Webmarketeur">
+<meta name="twitter:description" content="Création de sites web professionnels, plateformes e-learning et design graphique. Découvrez l'expertise de Ronan77 pour une digitalisation réussie et performante.">
+<meta name="twitter:image" content="https://ronan77.vercel.app//assets/img/og-image.png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css?v=1">
+<!-- Favicon -->
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
+<!--  mobiles -->
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon.png">
+
+<style>
+	body > *:not(.floating-shapes):not(#mainNavbar):not(.bottom-nav) {
+		position: relative;
+		z-index: 1; 
+	}
+
+
+	#mainNavbar {
+		z-index: 9990 !important;
+	}
+	html, body {
+		overflow-x: hidden;
+	}
+	::-webkit-scrollbar {
+		display: none;
+	}
+	body {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+	/* PRELOAD */
+	#preloader {
+		position: fixed;
+		top: 0; left: 0;
+		width: 100vw;
+		height: 100vh;
+		background: rgba(255, 255, 255, 0.92);
+		backdrop-filter: blur(8px);            
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 9999;
+		transition: opacity 0.8s ease;
+		pointer-events: none;      
+	}
+
+	#preloader.loaded {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.logo-only {
+		width: 120px;          
+		height: auto;
+		animation: preloaderFloat 2.5s ease-in-out infinite;
+	}
+
+	@keyframes preloaderFloat {
+		0%, 100% { transform: translateY(0); }
+		50% { transform: translateY(-18px); }
+	}
+</style>
+<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "FAQPage",
+		"mainEntity": [{
+			"@type": "Question",
+			"name": "Comment commander un site web professionnel avec Ronan77 ?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Il suffit de me contacter directement via mes réseaux ou par téléphone pour discuter du projet et convenir d’un devis clair et sans engagement pour votre site internet."
+			}
+		}, {
+			"@type": "Question",
+			"name": "Quels sont les délais de livraison pour la création d'un site vitrine ?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Les délais varient : un projet standard (comme un site vitrine) prend de 2 à 7 jours en moyenne."
+			}
+		}, {
+			"@type": "Question",
+			"name": "Combien de temps faut-il pour développer un site e-Commerce ou woocommerce ?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Le délai dépend de la complexité. Un site e-Commerce simple est livré en 2 à 4 semaines. Un projet complexe prendra plusieurs mois."
+			}
+		}, {
+			"@type": "Question",
+			"name": "Proposez-vous la maintenance et le support technique après la livraison ?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Oui, je propose un support technique et des conseils continus pour maintenir votre site web performant et sécurisé après la livraison."
+			}
+		}]
+	}
+</script>
+<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "LocalBusiness",
+		"name": "Ronan77 - Développeur Web & Designer Freelance",
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "Ton adresse rue si disponible",
+			"addressLocality": "Moramanga",
+			"addressRegion": "Alaotra-Mangoro",
+			"postalCode": "Ton code postal si disponible",
+			"addressCountry": "MG"
+		},
+		"url": "https://ronan77.vercel.app/",
+		"telephone": "+261381154220",
+		"email": "ronan077msi@mail.com",
+		"description": "Web Development, UI/UX Design, Conception Graphique",
+		"priceRange": "    $$"
+	}
+</script>
+</head>
+<body>
+
+<!-- Shapes -->
+<div class="floating-shapes">
+	<span class="shape"></span>
+	<span class="shape"></span>
+	<span class="shape"></span>
+	<span class="shape"></span>
+	<span class="shape"></span>
+	<span class="shape"></span>
+</div>
+
+<!-- PRELOADER -->
+<div id="preloader">
+	<img src="assets/img/preloader.png" alt="Ronan77" class="logo-only">
+</div>
+
+<!-- Section navbar -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+	<div class="container-fluid px-4">
+
+		<!-- Logo à gauche -->
+		<a class="navbar-brand d-flex align-items-center gap-2" href="#welcome">
+			<div class="d-flex align-items-center justify-content-center rounded-3 bg-dark text-white fw-bold" 
+			style="width:40px;height:40px;font-family:'Montserrat',sans-serif;font-size:13px;letter-spacing:-0.5px;flex-shrink:0;">
+			R77
+		</div>
+		<span style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.05rem;color:#111;letter-spacing:-0.3px;">
+			Ronan<span style="font-weight:500;color:#666;">77</span>
+		</span>
+	</a>
+
+	<!-- Toggle mobile -->
+	<button class="navbar-toggler border-0 d-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<!-- Liens + CTA à droite -->
+	<div class="collapse navbar-collapse" id="navbarMain">
+
+		<!-- Liens centrés -->
+		<ul class="navbar-nav mx-auto align-items-center gap-1">
+			<li class="nav-item"><a class="nav-link fw-semibold px-3 py-2 rounded-pill" href="#welcome">Accueil</a></li>
+			<li class="nav-item"><a class="nav-link fw-semibold px-3 py-2 rounded-pill" href="#services">Services</a></li>
+			<li class="nav-item"><a class="nav-link fw-semibold px-3 py-2 rounded-pill" href="#experience">Expériences</a></li>
+			<li class="nav-item"><a class="nav-link fw-semibold px-3 py-2 rounded-pill" href="#cv">CV</a></li>
+			<li class="nav-item"><a class="nav-link fw-semibold px-3 py-2 rounded-pill" href="#about">À propos</a></li>
+			<li class="nav-item"><a class="nav-link fw-semibold px-3 py-2 rounded-pill" href="#contact">Contact</a></li>
+		</ul>
+
+		<!-- CTA WhatsApp à droite -->
+		<div class="d-flex align-items-center gap-3 ms-lg-3 mt-3 mt-lg-0">
+			<a href="https://wa.me/261381154220" target="_blank" rel="noopener noreferrer"
+			class="btn btn-sm rounded-pill fw-bold px-3 py-2 d-inline-flex align-items-center gap-2"
+			style="background:#25d366;color:#fff;border:none;">
+			<i class="bi bi-whatsapp"></i> WhatsApp
+		</a>
+		<div class="d-flex align-items-center gap-2 px-3 py-1 rounded-pill border" style="cursor:default;">
+			<!-- Toggle dark mode -->
+			<button id="darkToggle" onclick="toggleDark()"
+			class="btn btn-sm rounded-circle border d-flex align-items-center justify-content-center"
+			style="width:36px;height:36px;font-size:1rem;background:transparent;"
+			title="Mode sombre">
+			<i class="bi bi-moon-fill" id="darkIcon"></i>
+		</button>
+	</div>
+</div>
+
+</div>
+</div>
+</nav>
+
+
+<!-- Section Bienvenue -->
+<section id="welcome">
+	<div class="container">
+		<div class="row align-items-center g-5 min-vh-75">
+
+			<!-- GAUCHE : texte -->
+			<div class="col-lg-6">
+
+				<span class="badge rounded-pill bg-dark text-white fw-bold mb-3 px-3 py-2"
+				style="font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;">
+				Disponible · Remote
+			</span>
+
+			<h1 class="fw-bold mb-3 animate-h1" style="font-family:'Montserrat',sans-serif;font-size:clamp(2rem,4vw,2.8rem);line-height:1.2;">
+				Développeur Web<br>
+				<span style="color:#777;font-weight:500;">&amp; Webmarketeur</span><br>
+				Freelance
+			</h1>
+
+			<p class="lead mb-3" style="font-size:1rem;">
+				Je suis un <span class="typed" data-typed-items="Développeur Web, Webmarketeur"></span>
+			</p>
+
+			<p class="mb-4" style="color:#555;line-height:1.8;max-width:520px;">
+				Spécialisé dans la conception, le développement et le pilotage de projets web. A l’aise en développement backend (Node.js, PHP), frontend (Bootstrap, JS) et en gestion de projets. Je complète ce profil par des compétences en design graphique (Adobe Suite) et en SEO technique. Motivé à mettre cette polyvalence au service de votre entreprise et de ses projets.
+			</p>
+
+			<div class="d-flex flex-wrap gap-3 mb-5">
+				<a href="https://wa.me/261381154220" target="_blank" rel="noopener noreferrer"
+				class="btn btn-dark rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2">
+				<i class="bi bi-whatsapp"></i> Discuter du projet
+			</a>
+			<a href="#cv"
+			class="btn btn-outline-dark rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2">
+			<i class="bi bi-file-earmark-person"></i> Voir mon CV
+		</a>
+	</div>
+
+	<!-- Stats -->
+	<div class="d-flex gap-4 pt-4" style="border-top:1px solid rgba(0,0,0,0.1);">
+		<div>
+			<div class="fw-bold" style="font-family:'Montserrat',sans-serif;font-size:1.6rem;">8+</div>
+			<div class="text-muted small">Clients</div>
+		</div>
+		<div>
+			<div class="fw-bold" style="font-family:'Montserrat',sans-serif;font-size:1.6rem;">3</div>
+			<div class="text-muted small">Pays</div>
+		</div>
+		<div>
+			<div class="fw-bold" style="font-family:'Montserrat',sans-serif;font-size:1.6rem;">2h</div>
+			<div class="text-muted small">Réponse garantie</div>
+		</div>
+	</div>
+
+</div>
+
+<!-- DROITE : photo -->
+<div class="col-lg-6 d-flex justify-content-center">
+	<div class="position-relative d-inline-block">
+
+		<!-- Card flottante haut -->
+		<div class="position-absolute d-flex align-items-center gap-2 bg-white rounded-3 px-3 py-2 shadow-sm fw-semibold"
+		style="top:24px;left:-20px;font-size:0.8rem;z-index:2;white-space:nowrap;">
+		<span style="width:8px;height:8px;border-radius:50%;background:#25d366;flex-shrink:0;display:inline-block;"></span>
+		Disponible maintenant
+	</div>
+
+	<!-- Photo -->
+	<div class="modern-profile-wrapper" style="border-radius:32px;overflow:hidden;width:300px;height:360px;border:3px solid #fff;box-shadow:0 16px 56px rgba(0,0,0,0.13);">
+		<img src="assets/img/profile-2.webp" alt="Ronan Andriamahenitsoa"
+		class="img-fluid w-100 h-100" style="object-fit:cover;">
+	</div>
+
+	<!-- Card flottante bas -->
+	<div class="position-absolute d-flex align-items-center gap-2 bg-white rounded-3 px-3 py-2 shadow-sm fw-semibold"
+	style="bottom:28px;right:-20px;font-size:0.8rem;z-index:2;white-space:nowrap;">
+	<div class="d-flex align-items-center justify-content-center rounded-2 bg-dark text-white"
+	style="width:28px;height:28px;font-size:13px;flex-shrink:0;">🇲🇬</div>
+	Moramanga, Madagascar
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- Section About -->
+<section id="about" class="py-5 text-center d-flex align-items-center">
+	<div class="container">
+		<div class="row justify-content-center align-items-center g-5">
+
+			<!-- Texte -->
+			<div class="col-lg-8">
+				<div class="about-content mx-auto">
+
+					<div class="section-header mb-4">
+						<span class="badge-text d-inline-block mb-2">Qui suis-je ?</span>
+						<h2 class="mt-2 fw-bold">
+							Développeur Web & Webmarketeur, je pilote vos projets digitaux de A à Z.
+						</h2>
+					</div>
+
+					<div class="description mx-auto" style="max-width: 700px;">
+						<p>
+							Formé en Gestion et en développement web, je ne sépare pas la technique du business. Quand je prends en charge un projet, je comprends vos enjeux commerciaux avant d'écrire la première ligne de code.
+							<p>
+								J'ai développé des plateformes e-learning, refondu des sites WordPress pour des hôtels et des associations, construit des applications sur mesure toujours en autonomie complète, avec un suivi rigoureux et une livraison dans les délais convenus.
+							</p>
+						</div>
+
+						<div class="details-grid mt-4 mx-auto" style="max-width: 600px;">
+							<div class="detail-row d-flex flex-column flex-md-row justify-content-center text-center text-md-start gap-3">
+								<div class="detail-item w-100 w-md-50">
+									<span class="detail-label fw-semibold d-block">Spécialisation</span>
+									<span class="detail-value">Développement Web &amp;Web marketing</span>
+								</div>
+								<div class="detail-item w-100 w-md-50">
+									<span class="detail-label fw-semibold d-block">Niveau d’expérience</span>
+									<span class="detail-value">Junior</span>
+								</div>
+							</div>
+
+							<div class="detail-row d-flex flex-column flex-md-row justify-content-center text-center text-md-start gap-3 mt-3">
+								<div class="detail-item w-100 w-md-50">
+									<span class="detail-label fw-semibold d-block">Éducation</span>
+									<span class="detail-value">Licence 3 Gestion, ONIFRA Moramanga</span>
+								</div>
+								<div class="detail-item w-100 w-md-50">
+									<span class="detail-label fw-semibold d-block">Langues</span>
+									<span class="detail-value">Malagasy, Français, Anglais</span>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+<!-- Section Profil -->
+<section id="profile" class="py-5">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-5" data-aos="fade-up">
+
+				<div class="profile-card-modern shadow-lg rounded-4 p-4 text-center position-relative overflow-hidden">
+					
+					<div class="card-bg-effect"></div>
+
+					<!-- Img -->
+					<div class="profile-image-wrapper position-relative d-inline-block mb-4">
+						<img 
+						src="assets/img/profile-square-3.webp" 
+						alt="Ronan Andriamahenitsoa"
+						class="profile-image-modern img-fluid"
+						width="160" 
+						height="160"
+						loading="lazy"
+						decoding="async">
+						<div class="online-badge position-absolute bottom-0 end-0 translate-middle-x">
+							<i class="bi bi-check-circle-fill"></i>
+						</div>
+					</div>
+
+					<h3 class="fw-bold mb-1 text-dark">Ronan Andriamahenitsoa</h3>
+					<p class="profession text-dark mb-4 fw-medium">Développeur Web &amp; Designer</p>
+
+					<!-- Contacts -->
+					<div class="contact-links d-flex flex-column gap-3 mb-4">
+						<a href="mailto:ronan077msi@gmail.com" class="contact-link d-flex align-items-center justify-content-start gap-3 text-decoration-none">
+							<div class="icon-circle contact-icon"><i class="bi bi-envelope"></i></div>
+							<span class="contact-text">ronan077msi@gmail.com</span>
+						</a>
+						<a href="tel:+261381154220" class="contact-link d-flex align-items-center justify-content-start gap-3 text-decoration-none">
+							<div class="icon-circle contact-icon"><i class="bi bi-telephone"></i></div>
+							<span class="contact-text">+261 38 11 542 20</span>
+						</a>
+						<a href="https://wa.me/261381154220" target="_blank" class="contact-link d-flex align-items-center justify-content-start gap-3 text-decoration-none text-success fw-bold">
+							<div class="icon-circle contact-icon" style="background:#25d366;color:white;"><i class="bi bi-whatsapp"></i></div>
+							<span class="contact-text">WhatsApp direct</span>
+						</a>
+						<a href="#" class="contact-link d-flex align-items-center justify-content-start gap-3 text-decoration-none">
+							<div class="icon-circle contact-icon"><i class="bi bi-geo-alt"></i></div>
+							<span class="contact-text">Ambohitranjavidy, Moramanga</span>
+						</a>
+					</div>
+
+					<!-- social -->
+					<div class="social-links d-flex justify-content-center gap-3">
+						<a href="https://github.com/ronan077msi" target="_blank" class="social-icon-bw"><i class="fab fa-github"></i></a>
+						<a href="https://www.facebook.com/ronan.andriamahenitsoa.5" target="_blank" class="social-icon-bw"><i class="fab fa-facebook-f"></i></a>
+						<a href="https://www.instagram.com/ronan_077/" target="_blank" class="social-icon-bw"><i class="fab fa-instagram"></i></a>
+						<a href="https://www.linkedin.com/in/ronan-andriamahenitso-b21978376?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" class="social-icon-bw"><i class="fab fa-linkedin-in"></i></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Section compétences -->
+<section id="skills" class="py-5">
+	<div class="container">
+
+		<!-- Header -->
+		<div class="text-center mb-5" data-aos="fade-up">
+			<span class="badge-text d-inline-block mb-3">Mes Compétences</span>
+			<h2 class="fw-bold">Les outils que j'utilise au quotidien sur mes projets</h2>
+			<p class="text-muted mt-2">Pas une liste théorique — ce que je maîtrise réellement en production.</p>
+		</div>
+
+		<!-- Barres de compétences -->
+		<div class="row justify-content-center">
+
+			<!-- Colonne gauche : Développement Web -->
+			<div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+				<div class="skills-category">
+					<h3 class="fw-bold mb-4">Développement Web</h3>
+					<div class="skills-animation">
+
+						<div class="skill-item mb-4">
+							<div class="d-flex justify-content-between align-items-center mb-1">
+								<h4 class="skill-title mb-0">Front-End</h4>
+								<span class="skill-percentage">70%</span>
+							</div>
+							<div class="skill-tags" aria-label="Technologies Front-End"><span>HTML/CSS</span><span>JavaScript</span><span>Bootstrap/SCSS</span><span>AOS/AJAX</span></div>
+							<div class="progress modern-progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+
+						<div class="skill-item mb-4">
+							<div class="d-flex justify-content-between align-items-center mb-1">
+								<h4 class="skill-title mb-0">Back-End</h4>
+								<span class="skill-percentage">80%</span>
+							</div>
+							<div class="skill-tags" aria-label="Technologies Back-End"><span>Node.js</span><span>Express</span><span>PHP</span><span>API REST</span></div>
+							<div class="progress modern-progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+
+						<div class="skill-item mb-4">
+							<div class="d-flex justify-content-between align-items-center mb-1">
+								<h4 class="skill-title mb-0">Base de données</h4>
+								<span class="skill-percentage">75%</span>
+							</div>
+							<div class="skill-tags" aria-label="Technologies Base de donnees"><span>MySQL</span><span>MariaDB/Firebases</span><span>Modelisation</span></div>
+							<div class="progress modern-progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- Colonne droite : Autres compétences -->
+			<div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+				<div class="skills-category">
+					<h3 class="fw-bold mb-4">Webmarketing & Outils</h3>
+					<div class="skills-animation">
+
+						<div class="skill-item mb-4">
+							<div class="d-flex justify-content-between align-items-center mb-1">
+								<h4 class="skill-title mb-0">CMS</h4>
+								<span class="skill-percentage">80%</span>
+							</div>
+							<div class="skill-tags" aria-label="Technologies WordPress"><span>WordPress</span><span>WooCommerce</span><span>Elementor/Divi</span><span>Shopify</span></div>
+							<div class="progress modern-progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+
+						<div class="skill-item mb-4">
+							<div class="d-flex justify-content-between align-items-center mb-1">
+								<h4 class="skill-title mb-0">Webmarketing & Design</h4>
+								<span class="skill-percentage">80%</span>
+							</div>
+							<div class="skill-tags" aria-label="Technologies Webmarketing et design"><span>SEO</span><span>Google Ecosystem</span><span>Adobe Suites</span><span>Community Management</span></div>
+							<div class="progress modern-progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+
+						<div class="skill-item mb-4">
+							<div class="d-flex justify-content-between align-items-center mb-1">
+								<h4 class="skill-title mb-0">Bureautique</h4>
+								<span class="skill-percentage">85%</span>
+							</div>
+							<div class="skill-tags" aria-label="Outils bureautiques"><span>SPSS</span><span>Google Workspace</span><span>Microsoft Office</span></div>
+							<div class="progress modern-progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- ═══ NOUVELLE SECTION : Gestion de projet ═══ -->
+		<div class="row mt-5" data-aos="fade-up" data-aos-delay="100">
+			<div class="col-12">
+				<div class="skills-category p-4 rounded-4 shadow-sm" style="background: rgba(255, 255, 255, 0.95); border-left: 4px solid var(--primary, #333);">
+					<h3 class="fw-bold mb-4">Gestion de projet & Management</h3>
+					<div class="row g-4">
+
+						<!-- Outils de gestion -->
+						<div class="col-md-4">
+							<div class="text-center p-3">
+								<div class="mb-3">
+									<i class="fas fa-project-diagram fa-2x" style="color: var(--primary, #333);"></i>
+								</div>
+								<h5 class="fw-bold mb-2">Outils de pilotage</h5>
+								<p class="text-muted small mb-0">MS Project · Notion · Méthodologie de projet · SPSS</p>
+							</div>
+						</div>
+
+						<!-- Communication professionnelle -->
+						<div class="col-md-4">
+							<div class="text-center p-3">
+								<div class="mb-3">
+									<i class="fas fa-comments fa-2x" style="color: var(--primary, #333);"></i>
+								</div>
+								<h5 class="fw-bold mb-2">Communication</h5>
+								<p class="text-muted small mb-0">Briefing client · Cahier des charges · Reporting · Brainstorming · Compte-rendu</p>
+							</div>
+						</div>
+
+						<!-- Pilotage projets -->
+						<div class="col-md-4">
+							<div class="text-center p-3">
+								<div class="mb-3">
+									<i class="fas fa-tasks fa-2x" style="color: var(--primary, #333);"></i>
+								</div>
+								<h5 class="fw-bold mb-2">Pilotage A à Z</h5>
+								<p class="text-muted small mb-0">Analyse du besoin · Développement · Déploiement · Formation client · Suivi post-livraison</p>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- Badge Gestion -->
+					<div class="text-center mt-4">
+						<span class="badge bg-light text-dark border me-2 py-2 px-3">Licence 3 Gestion – Management & RH</span>
+						<span class="badge bg-light text-dark border me-2 py-2 px-3">Git & GitHub</span>
+						<span class="badge bg-light text-dark border me-2 py-2 px-3">Postman</span>
+						<span class="badge bg-light text-dark border me-2 py-2 px-3">XAMPP / O2switch</span>
+						<span class="badge bg-light text-dark border py-2 px-3">Sublime Text / VS Code</span>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Section Expériences -->
+<section id="experience" class="py-5">
+	<div class="container">
+		<div class="text-center mb-5">
+			<span class="badge-text d-inline-block mb-3">Mon Parcours</span>
+			<h2 class="fw-bold">Expériences</h2>
+		</div>
+
+		<div class="row g-4 align-items-stretch">
+			<!-- 1 -->
+			<div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+				<div class="experience-card p-4 shadow-sm rounded-4 position-relative h-100">
+					<h4 class="fw-bold mb-2">Développeur Web</h4>
+					<span class="text-muted mb-2 d-block">Gasi'Pro – Moramanga · 2025</span>
+					<p>
+						Développement complet front-end et back-end d'une application web métier 
+						pour une entreprise locale : interfaces modernes, logique serveur et gestion de données.
+					</p>
+					<ul class="mb-0 ps-3">
+						<li>Conception d'interfaces responsive avec Bootstrap & SCSS</li>
+						<li>Développement back-end avec Node.js / Express.js</li>
+						<li>Gestion de base de données MySQL et déploiement</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- 2 -->
+			<div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+				<div class="experience-card p-4 shadow-sm rounded-4 position-relative h-100">
+					<h4 class="fw-bold mb-2">Graphisme & Branding</h4>
+					<span class="text-muted mb-2 d-block">Clients indépendants · 2025</span>
+					<p>
+						Création d'identités visuelles et de supports de communication pour des clients 
+						freelance : flyers, logos, visuels réseaux sociaux.
+					</p>
+					<ul class="mb-0 ps-3">
+						<li>Conception de logos et chartes graphiques sous Illustrator</li>
+						<li>Création de visuels print & digitaux avec Photoshop</li>
+						<li>Gestion de plusieurs projets créatifs en simultané</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- 3 -->
+			<div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+				<div class="experience-card p-4 shadow-sm rounded-4 position-relative h-100">
+					<h4 class="fw-bold mb-2">Responsable Marketing, Com & Digitalisation</h4>
+					<span class="text-muted mb-2 d-block">Cabinet UMEGREATPRO · 2026</span>
+					<p>
+						Pilotage du marketing digital et de la communication d'un cabinet professionnel : 
+						digitalisation des processus et déploiement de la présence en ligne.
+					</p>
+					<ul class="mb-0 ps-3">
+						<li>Création de supports print & web avec l'Adobe Suite</li>
+						<li>Gestion des réseaux sociaux et du site web</li>
+						<li>Planification et déploiement de campagnes digitales</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- 4 -->
+			<div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+				<div class="experience-card p-4 shadow-sm rounded-4 position-relative h-100">
+					<h4 class="fw-bold mb-2">WordPress & WooCommerce</h4>
+					<span class="text-muted mb-2 d-block">Hôtel Pingouinvillas Blue Bay – Île Maurice · 2026</span>
+					<p>
+						Refonte et optimisation d'un site WordPress pour un hôtel de l'Île Maurice : 
+						correction de bugs, amélioration des performances et référencement naturel (SEO) 
+						pour renforcer la visibilité en ligne de l'établissement.
+					</p>
+					<ul class="mb-0 ps-3">
+						<li>Diagnostic et correction de bugs WordPress & WooCommerce</li>
+						<li>Optimisation SEO on-page : balises méta, titres, vitesse de chargement</li>
+						<li>Amélioration de l'expérience utilisateur (UX) et du taux de conversion</li>
+						<li>
+							<a href="https://pingouinvillas.com" target="_blank" rel="noopener noreferrer">
+								pingouinvillas.com
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- 5 -->
+			<div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+				<div class="experience-card p-4 shadow-sm rounded-4 position-relative h-100">
+					<h4 class="fw-bold mb-2">Plateforme E-learning sur mesure</h4>
+					<span class="text-muted mb-2 d-block">Learning Academy – Île de la Réunion · 2026</span>
+					<p>
+						Développement complet d'une plateforme de formation en ligne pour un organisme 
+						de l'Île de la Réunion : gestion des cours, des apprenants et des quiz, 
+						avec une interface moderne et responsive.
+					</p>
+					<ul class="mb-0 ps-3">
+						<li>Développement full-stack : Node.js / Express, MariaDB, Bootstrap 5</li>
+						<li>Système d'authentification JWT, gestion des rôles (admin / étudiant)</li>
+						<li>Intégration de cours, leçons, quiz et suivi de progression</li>
+						<li>
+							<a href="https://learning-academy.re" target="_blank" rel="noopener noreferrer">
+								learning-academy.re
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- 6 -->
+			<div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+				<div class="experience-card p-4 shadow-sm rounded-4 position-relative h-100">
+					<h4 class="fw-bold mb-2">Refonte WordPress & Multilingue</h4>
+					<span class="text-muted mb-2 d-block">Paola Martins · 2026</span>
+					<p>
+						Refonte complète du site WordPress d'une entrepreneure : modernisation du design, 
+						intégration multilingue et optimisation de l'expérience sur tous les appareils.
+					</p>
+					<ul class="mb-0 ps-3">
+						<li>Refonte graphique et structurelle du site sous WordPress</li>
+						<li>Intégration multilingue avec Polylang</li>
+						<li>Optimisation responsive : mobile, tablette et desktop</li>
+						<li>
+							<a href="https://www.paolamartins.com" target="_blank" rel="noopener noreferrer">
+								paolamartins.com
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- 7 -->
+			<div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+				<div class="experience-card p-4 shadow-sm rounded-4 position-relative h-100">
+					<h4 class="fw-bold mb-2">Refonte WordPress – Hébergement & Tourisme</h4>
+					<span class="text-muted mb-2 d-block">Au Cœur de Grand Îlet Chez Tania – Île de la Réunion · 2026</span>
+					<p>
+						Refonte complète du site WordPress d'une maison d'hôtes réunionnaise : 
+						modernisation du design, intégration des pages et optimisation de l'expérience 
+						sur tous les appareils pour attirer davantage de voyageurs.
+					</p>
+					<ul class="mb-0 ps-3">
+						<li>Refonte graphique et structurelle du site sous WordPress</li>
+						<li>Intégration et mise en page des contenus (chambres, activités, réservations)</li>
+						<li>Optimisation responsive : mobile, tablette et desktop</li>
+						<li>
+							<a href="https://aucoeurdegrandiletcheztania.com" target="_blank" rel="noopener noreferrer">
+								aucoeurdegrandiletcheztania.com
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 8 -->
+			<div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+				<div class="experience-card p-4 shadow-sm rounded-4 position-relative h-100">
+					<h4 class="fw-bold mb-2">Site WordPress – Association & Solidarité</h4>
+					<span class="text-muted mb-2 d-block">Association Live Together – Île de la Réunion · 2026</span>
+					<p>
+						Refonte du site WordPress d'une association réunionnaise engagée pour le 
+						vivre-ensemble et la lutte contre les discriminations : design modernisé, 
+						contenu optimisé et visibilité renforcée à l'international.
+					</p>
+					<ul class="mb-0 ps-3">
+						<li>Refonte graphique et structurelle du site sous WordPress</li>
+						<li>Mise en valeur des missions et valeurs de l'association</li>
+						<li>Optimisation SEO et responsive : mobile, tablette et desktop</li>
+						<li>
+							<a href="https://associationlivetogether.org" target="_blank" rel="noopener noreferrer">
+								associationlivetogether.org
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Section CV -->
+<section id="cv" class="py-5">
+	<div class="container">
+		<div class="text-center mb-5" data-aos="fade-up">
+			<span class="badge-text d-inline-block mb-3">Mon CV</span>
+			<h2 class="fw-bold">Téléchargez mon CV</h2>
+			<p class="text-muted mt-2">Développeur Web Full-Stack & Webmarketeur - disponible pour missions remote</p>
+		</div>
+
+		<div class="row justify-content-center">
+			<div class="col-lg-9" data-aos="fade-up" data-aos-delay="100">
+				<div class="experience-card p-4 p-md-5 shadow-sm rounded-4 d-flex flex-column flex-md-row align-items-center gap-4">
+
+					<!-- Icône -->
+					<div class="flex-shrink-0 text-center">
+						<div class="d-inline-flex align-items-center justify-content-center rounded-4 bg-dark text-white" style="width:80px;height:80px;">
+							<i class="fas fa-file-pdf fa-2x"></i>
+						</div>
+					</div>
+
+					<!-- Infos -->
+					<div class="flex-grow-1 text-center text-md-start">
+						<h4 class="fw-bold mb-1">Ronan Andriamahenitsoa – CV 2026</h4>
+						<p class="text-muted mb-3">
+							Développeur Web Full-Stack &amp; Webmarketeur Freelance · Moramanga, Madagascar<br>
+							Disponible pour missions remote – France, La Réunion, Île Maurice
+						</p>
+						<div class="d-flex flex-wrap gap-2 justify-content-center justify-content-md-start mb-4">
+							<span class="badge bg-light text-dark border">Dev Web</span>
+							<span class="badge bg-light text-dark border">Web Marketing</span>
+							<span class="badge bg-light text-dark border">WordPress</span>
+							<span class="badge bg-light text-dark border">Shopify</span>
+							<span class="badge bg-light text-dark border">Gestion de projet</span>
+							<span class="badge bg-light text-dark border">SEO</span>
+							<span class="badge bg-light text-dark border">UI/UX Design</span>
+						</div>
+						<div class="d-flex flex-wrap gap-3 justify-content-center justify-content-md-start">
+							<a href="CV_ANDRIAMAHENITSOA Tsiaro Ronan.pdf" download class="btn btn-dark rounded-pill px-4 py-2 fw-bold">
+								<i class="fas fa-download me-2"></i>Télécharger le CV (PDF)
+							</a>
+							<a href="https://wa.me/261381154220" target="_blank" rel="noopener noreferrer" class="whatsapp-btn rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2">
+								<i class="bi bi-whatsapp"></i> Me contacter
+							</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- clients -->
+<section id="testimonials" class="py-5">
+	<div class="container">
+		<div class="text-center mb-5" data-aos="fade-up">
+			<span class="badge-text d-inline-block mb-3">Avis clients</span>
+			<h2 class="fw-bold">Ils m'ont fait confiance</h2>
+			<p class="text-muted mt-2">Des clients satisfaits, des projets concrets, des résultats mesurables.</p>
+		</div>
+		<div class="row g-4">
+
+			<!-- 1 -->
+			<div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+				<div class="project-card shadow-sm rounded-4 overflow-hidden h-100">
+					<img src="assets/img/project1.webp" class="img-fluid" alt="Projet Gasi'Pro – Application web Moramanga">
+					<div class="p-4">
+						<div class="stars mb-2">★★★★★</div>
+						<p class="fst-italic mb-3">
+							"Les flyers sont magnifiques. Un travail soigné, créatif et livré rapidement."
+						</p>
+						<strong>HAVOZOMMI – MIKABARY</strong>
+						<p class="text-muted small mb-0">Flyers & Visuels</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- 2 -->
+			<div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+				<div class="project-card shadow-sm rounded-4 overflow-hidden h-100">
+					<img src="assets/img/flyers-1.webp" class="img-fluid" alt="Plateforme web Gasi'Pro Sarl – Moramanga">
+					<div class="p-4">
+						<div class="stars mb-2">★★★★</div>
+						<p class="fst-italic mb-3">
+							"Ronan a mis en œuvre son expertise technique et son design UI/UX pour créer une plateforme ludique visant à promouvoir la culture Malgache et l'histoire locale."
+						</p>
+						<strong>Gasi'Pro Sarl</strong>
+						<p class="text-muted small mb-0">Développement Web – Moramanga</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- 3 -->
+			<div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+				<div class="project-card shadow-sm rounded-4 overflow-hidden h-100">
+					<img src="assets/img/flyers-22-post.webp" class="img-fluid" alt="Site WordPress Pingouinvillas – Île Maurice">
+					<div class="p-4">
+						<div class="stars mb-2">★★★★★</div>
+						<p class="fst-italic mb-3">
+							"Un service personnalisé, une ambiance paisible et conviviale — notre site reflète désormais parfaitement l'expérience que nous offrons à Blue Bay."
+						</p>
+						<strong>Pingouinvillas</strong>
+						<p class="text-muted small mb-0">WordPress & SEO – Île Maurice</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="text-center mt-5">
+			<a href="https://wa.me/261381154220"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="whatsapp-btn rounded-pill px-5 py-3 fw-bold d-inline-block">
+			Discuter de ton projet sur WhatsApp →
+		</a>
+	</div>
+</div>
+</section>
+<!-- Section Services -->
+<section id="services" class="py-5">
+	<div class="container">
+		<div class="text-center mb-5" data-aos="fade-up">
+			<span class="badge-text d-inline-block mb-3">Ce que je propose</span>
+			<h2 class="fw-bold">Mes Offres & Tarifs</h2>
+			<p class="text-muted mt-2">Des solutions web et digitales sur mesure, adaptées à votre budget et vos objectifs.</p>
+		</div>
+		<div class="row g-4">
+
+			<!-- Service 1 -->
+			<div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+				<div class="service-card shadow-sm rounded-4 p-4 text-center h-100">
+					<div class="service-icon mb-3">
+						<i class="fas fa-code fa-2x"></i>
+					</div>
+					<h5 class="fw-bold">Site Vitrine</h5>
+					<p>Un site professionnel, rapide et bien référencé pour donner une première impression qui convertit. Idéal pour les indépendants, hôtels, associations et PME.</p>
+					<p class="fw-bold text-secondary">À partir de 150 €</p>
+					<a href="#contact" class="btn btn-dark btn-sm mt-2">Demander ce service</a>
+				</div>
+			</div>
+
+			<!-- Service 2 -->
+			<div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="0">
+				<div class="service-card shadow-sm rounded-4 p-4 text-center h-100">
+					<div class="service-icon mb-3">
+						<i class="fas fa-shopping-cart fa-2x"></i>
+					</div>
+					<h5 class="fw-bold">Site e-Commerce</h5>
+					<p>Boutique en ligne complète avec paiement intégré, gestion des produits et expérience d'achat fluide — WordPress/WooCommerce ou Shopify selon vos besoins.</p>
+					<p class="fw-bold text-secondary">À partir de 200 €</p>
+					<a href="#contact" class="btn btn-dark btn-sm mt-2">Demander ce service</a>
+				</div>
+			</div>
+
+			<!-- Service 3 -->
+			<div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="0">
+				<div class="service-card shadow-sm rounded-4 p-4 text-center h-100">
+					<div class="service-icon mb-3">
+						<i class="fas fa-palette fa-2x"></i>
+					</div>
+					<h5 class="fw-bold">Flyers & Visuels</h5>
+					<p>Logos, flyers, affiches, visuels réseaux sociaux — créations sous Adobe Photoshop et Illustrator, prêtes pour l'impression ou la publication digitale.</p>
+					<p class="fw-bold text-secondary">À partir de 15 € par visuel</p>
+					<a href="#contact" class="btn btn-dark btn-sm mt-2">Demander ce service</a>
+				</div>
+			</div>
+
+			<!-- Service 4 -->
+			<div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="0">
+				<div class="service-card shadow-sm rounded-4 p-4 text-center h-100">
+					<div class="service-icon mb-3">
+						<i class="fab fa-wordpress fa-2x"></i>
+					</div>
+					<h5 class="fw-bold">WordPress & WooCommerce</h5>
+					<p>Refonte, création ou maintenance : thème personnalisé, plugins configurés, sécurité assurée. Vous récupérez un site qui tourne sans vous occuper de la technique.</p>
+					<p class="fw-bold text-secondary">À partir de 150 €</p>
+					<a href="#contact" class="btn btn-dark btn-sm mt-2">Demander ce service</a>
+				</div>
+			</div>
+
+			<!-- Service 5 -->
+			<div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="0">
+				<div class="service-card shadow-sm rounded-4 p-4 text-center h-100">
+					<div class="service-icon mb-3">
+						<i class="fas fa-id-card fa-2x"></i>
+					</div>
+					<h5 class="fw-bold">Site Portfolio</h5>
+					<p>Un portfolio pensé pour convaincre en 30 secondes : projets mis en valeur, parcours clair, personnalité visible. Pour les freelances, créatifs et professionnels.</p>
+					<p class="fw-bold text-secondary">À partir de 80 €</p>
+					<a href="#contact" class="btn btn-dark btn-sm mt-2">Demander ce service</a>
+				</div>
+			</div>
+
+			<!-- Service 6 -->
+			<div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="0">
+				<div class="service-card shadow-sm rounded-4 p-4 text-center h-100">
+					<div class="service-icon mb-3">
+						<i class="fas fa-search fa-2x"></i>
+					</div>
+					<h5 class="fw-bold">Optimisation SEO</h5>
+					<p>Audit complet + corrections on-page : balises, vitesse, structure, mots-clés. Résultat : meilleure position sur Google et plus de visiteurs qualifiés sans payer de pub.</p>
+					<p class="fw-bold text-secondary">À partir de 80€</p>
+					<a href="#contact" class="btn btn-dark btn-sm mt-2">Demander ce service</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<!-- S FAQ -->
+<section id="faq" class="py-5">
+	<div class="container">
+		<div class="text-center mb-5" data-aos="fade-up">
+			<span class="badge-text d-inline-block mb-3">FAQ</span>
+			<h2 class="fw-bold">Questions fréquentes</h2>
+			<p class="text-muted mt-2">Tout ce que vous devez savoir avant de lancer votre projet web.</p>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-lg-8">
+				<div class="accordion" id="faqAccordion">
+
+					<!-- Q 1 -->
+					<div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+						<h2 class="accordion-header" id="faqHeadingOne">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="false" aria-controls="faqCollapseOne">
+								Comment commander un site web professionnel avec Ronan77 ?
+							</button>
+						</h2>
+						<div id="faqCollapseOne" class="accordion-collapse collapse" aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
+							<div class="accordion-body">
+								Contactez-moi via WhatsApp, téléphone ou le formulaire de contact pour discuter de votre projet. Je vous propose un devis clair, détaillé et sans engagement sous 24h.
+							</div>
+						</div>
+					</div>
+
+					<!-- Q 2 -->
+					<div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+						<h2 class="accordion-header" id="faqHeadingTwo">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+								Quels sont les délais de livraison pour un site vitrine ou WordPress ?
+							</button>
+						</h2>
+						<div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
+							<div class="accordion-body">
+								Un site vitrine simple est livré en 3 à 7 jours. Un site WordPress avec personnalisation avancée prend généralement 1 à 2 semaines selon le cahier des charges.
+							</div>
+						</div>
+					</div>
+
+					<!-- Q 3 -->
+					<div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+						<h2 class="accordion-header" id="faqHeadingThree">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+								Combien de temps faut-il pour développer un site e-Commerce ?
+							</button>
+						</h2>
+						<div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#faqAccordion">
+							<div class="accordion-body">
+								Un site e-Commerce WooCommerce standard est livré en 2 à 4 semaines. Le délai dépend du nombre de produits, des fonctionnalités (paiement en ligne, multi-devises, etc.) et des retours clients.
+							</div>
+						</div>
+					</div>
+
+					<!-- Q 4 -->
+					<div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+						<h2 class="accordion-header" id="faqHeadingFour">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+								Proposez-vous la maintenance et le support après la livraison ?
+							</button>
+						</h2>
+						<div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour" data-bs-parent="#faqAccordion">
+							<div class="accordion-body">
+								Oui, je propose un suivi technique après livraison : corrections de bugs, mises à jour, sauvegardes et conseils pour garder votre site performant et sécurisé sur le long terme.
+							</div>
+						</div>
+					</div>
+
+					<!-- Q 5 -->
+					<div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+						<h2 class="accordion-header" id="faqHeadingFive">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive">
+								Travaillez-vous avec des clients à distance (hors Madagascar) ?
+							</button>
+						</h2>
+						<div id="faqCollapseFive" class="accordion-collapse collapse" aria-labelledby="faqHeadingFive" data-bs-parent="#faqAccordion">
+							<div class="accordion-body">
+								Oui, je collabore avec des clients à Madagascar, à La Réunion, à l'Île Maurice et partout dans le monde. Tout se fait à distance via WhatsApp, email ou visioconférence.
+							</div>
+						</div>
+					</div>
+
+					<!-- Q 6 -->
+					<div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+						<h2 class="accordion-header" id="faqHeadingSix">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseSix" aria-expanded="false" aria-controls="faqCollapseSix">
+								Le SEO est-il inclus dans la création de site ?
+							</button>
+						</h2>
+						<div id="faqCollapseSix" class="accordion-collapse collapse" aria-labelledby="faqHeadingSix" data-bs-parent="#faqAccordion">
+							<div class="accordion-body">
+								Une optimisation SEO de base (balises méta, titres, structure des URLs, vitesse de chargement) est incluse dans chaque projet. Une prestation SEO avancée (audit complet, stratégie de mots-clés, suivi de positionnement) est disponible en option.
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="contact" class="py-5">
+	<div class="container text-center">
+		<div class="text-center mb-5" data-aos="fade-up">
+			<h2 class="fw-bold">Parlons de votre projet</h2>
+			<p class="text-muted mt-2">
+				Disponible à Moramanga et en ligne pour la création de votre site web, 
+				une refonte WordPress ou toute collaboration digitale. 
+				Réponse garantie sous 2h — devis gratuit et sans engagement.
+			</p>
+		</div>
+		<div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-4">
+			<a href="https://wa.me/261381154220" target="_blank" rel="noopener noreferrer" class="contact-card" data-aos="fade-up" data-aos-delay="100">
+				<i class="bi bi-whatsapp"></i>
+				<span>WhatsApp</span>
+				<small>+261 38 11 542 20</small>
+			</a>
+			<a href="tel:+261381154220" class="contact-card" data-aos="fade-up" data-aos-delay="200">
+				<i class="bi bi-telephone"></i>
+				<span>Téléphone</span>
+				<small>+261 38 11 542 20</small>
+			</a>
+			<a href="mailto:ronan077msi@gmail.com" class="contact-card" data-aos="fade-up" data-aos-delay="300">
+				<i class="bi bi-envelope"></i>
+				<span>Email</span>
+				<small>ronan077msi@gmail.com</small>
+			</a>
+		</div>
+	</div>
+</section>
+<!-- === Barre nav === -->
+<nav class="bottom-nav">
+	<ul class="navbar-nav flex-row justify-content-center align-items-center">
+		<li class="nav-item"><a class="nav-link" href="#welcome" title="Accueil"><i class="bi bi-house-door-fill"></i></a></li>
+		<li class="nav-item"><a class="nav-link" href="#services" title="Services"><i class="bi bi-gear-fill"></i></a></li>
+		<li class="nav-item"><a class="nav-link" href="#about" title="À propos"><i class="bi bi-person-circle"></i></a></li>
+		<li class="nav-item"><a class="nav-link" href="#contact" title="Contact"><i class="bi bi-envelope-fill"></i></a></li>
+	</ul>
+</nav>
+
+<!-- === Footer === -->
+<footer class="footer text-center py-4 mt-5">
+	<div class="container">
+		<h5 class="fw-bold mb-2">ANDRIAMAHENITSOA Tsiaro Ronan</h5>
+		<p class="mb-3">Création de Sites Web • SEO • Webmarketing</p>
+
+		<div class="d-flex justify-content-center gap-3 mb-3">
+			<a href="https://github.com/ronan077msi" target="_blank" class="footer-icon"><i class="fab fa-github"></i></a>
+			<a href="https://www.facebook.com/ronan.andriamahenitsoa.5" target="_blank" class="footer-icon"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://www.instagram.com/ronan_077/" target="_blank" class="footer-icon"><i class="fab fa-instagram"></i></a>
+			<a href="https://www.linkedin.com/in/ronan-andriamahenitso-b21978376?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" class="footer-icon"><i class="fab fa-linkedin-in"></i></a>
+		</div>
+
+		<p class="small mb-1">
+			&copy; <span id="year"></span> <strong>R_077</strong> – Tous droits réservés.
+		</p>
+		<p class="small mb-0">
+			Site développé et designé par <strong>Ronan Andriamahenitsoa (R_077)</strong>
+		</p>
+	</div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

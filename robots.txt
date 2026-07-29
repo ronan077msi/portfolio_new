@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Les ressources CSS, JavaScript et images sont nécessaires au rendu de la page.
+Sitemap: https://ronan77.vercel.app/sitemap.xml

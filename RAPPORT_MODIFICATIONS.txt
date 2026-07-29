@@ -1,0 +1,26 @@
+RAPPORT DES MODIFICATIONS
+Date : 29 juillet 2026
+
+1. Animation de la section Bienvenue
+L animation du hero demarrait sous le prechargeur et pouvait sembler absente. Elle est maintenant lancee lorsque le prechargeur se retire : le texte arrive d abord, puis la photo 150 ms plus tard.
+
+2. Animation des icones
+Le nom d'animation "float" etait declare deux fois. La declaration du prechargeur ecrasait celle des icones. Les noms sont maintenant distincts : floatIcon pour les icones et preloaderFloat pour le prechargeur.
+
+3. Cartes de contact
+Les cartes s'animaient au chargement initial, longtemps avant que la section soit visible. Elles utilisent desormais AOS et s'animent lors de leur apparition dans la zone visible, avec des delais de 100, 200 et 300 ms.
+
+4. Performance au defilement
+Les trois ecouteurs scroll ont ete remplaces par un seul gestionnaire passif. Les calculs sont groupes dans requestAnimationFrame pour reduire les saccades.
+
+5. Accessibilite
+Une regle prefers-reduced-motion limite les animations et transitions pour les visiteurs ayant active cette preference systeme.
+
+6. Syntaxe CSS
+Une accolade fermante manquante a la fin de la feuille de styles a ete ajoutee.
+
+VERIFICATIONS A EFFECTUER
+- Ouvrir index.html dans un navigateur.
+- Verifier le prechargeur, les icones flottantes, la navigation et les barres de competences.
+- Defiler jusqu'a Contact et verifier l'animation des trois cartes.
+- Tester avec l'option systeme "Reduire les animations" activee.

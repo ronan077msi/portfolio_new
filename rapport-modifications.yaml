@@ -1,0 +1,31 @@
+rapport:
+  titre: Corrections des animations du portfolio
+  date: 2026-07-29
+  fichiers_modifies:
+    - index.html
+    - assets/css/style.css
+    - assets/js/script.js
+    - README.md
+  corrections:
+    - probleme: Collision du nom d'animation float
+      solution: Les icones utilisent maintenant floatIcon et le prechargeur utilise preloaderFloat.
+      impact: Les icones recuperent leur animation avec mise a l'echelle sans modifier l'animation du prechargeur.
+    - probleme: Les cartes de contact terminaient leur animation avant l'arrivee de l'utilisateur dans la section.
+      solution: L'animation est confiee a AOS avec des delais echelonnes de 100, 200 et 300 ms.
+      impact: Les cartes apparaissent a l'entree dans la zone visible.
+    - probleme: Trois ecouteurs scroll executaient des traitements separes.
+      solution: Un seul gestionnaire passif execute les mises a jour dans requestAnimationFrame.
+      impact: Defilement plus fluide et moins de calculs concurrents.
+    - probleme: Les preferences de reduction des animations n'etaient pas prises en charge.
+      solution: Ajout d'une regle prefers-reduced-motion.
+      impact: Meilleure accessibilite pour les personnes sensibles aux mouvements.
+    - probleme: La derniere regle CSS etait depourvue d'accolade fermante.
+      solution: Ajout de l'accolade fermante.
+      impact: Feuille CSS correctement terminee.
+verification:
+  statut: a_verifier_dans_un_navigateur
+  controles_recommandes:
+    - Charger la page puis verifier la disparition du prechargeur.
+    - Faire defiler jusqu'a Contact et confirmer l'apparition progressive des trois cartes.
+    - Verifier la fluidite de la barre de navigation et des barres de competences.
+    - Activer Reduire les animations dans le systeme et recharger la page.
