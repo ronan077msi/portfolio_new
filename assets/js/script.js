@@ -302,21 +302,3 @@ document.addEventListener("DOMContentLoaded", function() {
   if (y) y.textContent = new Date().getFullYear();
 });
 
-// ============================================
-// 11. BONUS : Fermeture du menu mobile au clic
-// ============================================
-document.addEventListener("DOMContentLoaded", function() {
-  var navLinks = document.querySelectorAll('.navbar .nav-link');
-  var navbarCollapse = document.getElementById('navbarMain');
-
-  navLinks.forEach(function(link) {
-    link.addEventListener('click', function() {
-      if (navbarCollapse && window.innerWidth < 992) {
-        var bsCollapse = new bootstrap.Collapse(navbarCollapse, {
-          toggle: false
-        });
-        bsCollapse.hide();
-      }
-    });
-  });
-});
