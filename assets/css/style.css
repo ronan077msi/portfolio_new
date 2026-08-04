@@ -1033,6 +1033,12 @@ body {
   font-weight: 600;
   font-size: 0.9rem;
   letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto 1rem;
+  line-height: 1.2;
 }
 
 #contact h2 {
