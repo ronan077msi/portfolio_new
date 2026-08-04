@@ -135,6 +135,19 @@ body {
   -webkit-backdrop-filter: blur(24px) saturate(200%) brightness(1.15);
 }
 
+.navbar-toggler {
+  color: #111;
+  padding: 0.35rem 0.5rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  filter: none;
+}
+
 /* Liens */
 .navbar .nav-link {
   color: #111 !important;
@@ -174,6 +187,14 @@ body {
 
 [data-theme="dark"] .navbar .nav-link {
   color: #eee !important;
+}
+
+[data-theme="dark"] .navbar-toggler {
+  color: #f0f0f0;
+}
+
+[data-theme="dark"] .navbar-toggler-icon {
+  filter: invert(1);
 }
 
 [data-theme="dark"] .navbar .nav-link:hover {
@@ -696,6 +717,51 @@ body {
     font-size: 0.9rem;
 }
 
+.experience-card .experience-meta {
+    font-size: 0.95rem;
+}
+
+.experience-card .experience-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 0.75rem;
+}
+
+.experience-card .tech-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: #f4f4f4;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    color: #333;
+    font-size: 0.78rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.experience-card .tech-pill i {
+    font-size: 0.9rem;
+    color: #111;
+}
+
+.experience-card ul li {
+    line-height: 1.8;
+    margin-bottom: 8px;
+}
+
+[data-theme="dark"] .experience-card .tech-pill {
+    background: #2a2a2a;
+    border-color: rgba(255, 255, 255, 0.12);
+    color: #f0f0f0;
+}
+
+[data-theme="dark"] .experience-card .tech-pill i {
+    color: #fff;
+}
+
 /* === Section Projets === */
 #testimonials .badge-text {
   background: #333;
@@ -768,17 +834,30 @@ body {
   font-size: 0.9rem;
 }
 .service-card {
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.06);
 }
 
 .service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 16px 35px rgba(0,0,0,0.12);
+  border-color: rgba(0,0,0,0.12);
+}
+
+.service-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 16px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #f2f2f2, #e8e8e8);
 }
 
 .service-icon i {
   color: #333;
+  font-size: 1.35rem;
 }
 
 .service-card p.fw-bold.text-primary {
@@ -788,16 +867,26 @@ body {
 
 .service-card .btn-dark {
   background-color: #333;
-  border: 3px solid transparent;
+  border: 2px solid transparent;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
 }
 
 .service-card .btn-dark:hover {
   background-color: #fff;
   color: #333 !important;
-  transform: translateY(-4px);
-  border: 3px solid #333;
+  transform: translateY(-3px);
+  border: 2px solid #333;
   text-decoration: none;
   font-weight: 600;
+}
+
+.navbar-logo-frame {
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+[data-theme="dark"] .navbar-logo-frame {
+  background: #1e1e1e !important;
+  border-color: rgba(255,255,255,0.12);
 }
 
 /* === Section FAQ === */
@@ -818,39 +907,76 @@ body {
 #faq h2 {
   color: #222;
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
+}
+
+#faq .accordion {
+  display: grid;
+  gap: 12px;
 }
 
 #faq .accordion-item {
-  border: none;
-  background: transparent;
+  border: 1px solid rgba(0,0,0,0.07);
+  background: linear-gradient(180deg, #ffffff 0%, #fcfcfc 100%);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#faq .accordion-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 38px rgba(15, 23, 42, 0.09);
 }
 
 #faq .accordion-button {
-  background-color: #fff;
-  color: #333;
-  font-weight: 500;
-  border-radius: 14px;
-  margin-bottom: 12px;
-  padding: 1rem 1.2rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
-  transition: all 0.35s ease;
+  background-color: transparent;
+  color: #222;
+  font-weight: 600;
+  border-radius: 0;
+  padding: 1.1rem 1.2rem;
+  box-shadow: none;
+  transition: all 0.3s ease;
+  min-height: 78px;
+  align-items: center;
+  gap: 0.9rem;
 }
 
 #faq .accordion-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+  background-color: rgba(17, 24, 39, 0.03);
 }
 
 #faq .accordion-button:focus {
-  box-shadow: 0 0 0 3px rgba(51, 51, 51, 0.2);
+  box-shadow: none;
+  outline: none;
+}
+
+#faq .faq-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  color: #111;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.7);
+}
+
+#faq .faq-question {
+  text-align: left;
+  line-height: 1.45;
 }
 
 #faq .accordion-button:not(.collapsed) {
-  background-color: #333;
+  background-color: #111;
   color: #fff;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
-  transform: translateY(-2px);
+}
+
+#faq .accordion-button:not(.collapsed) .faq-icon {
+  background: rgba(255,255,255,0.16);
+  color: #fff;
+  box-shadow: none;
 }
 
 /* === Correction flèche bleue === */
@@ -860,16 +986,14 @@ body {
 }
 
 #faq .accordion-button:not(.collapsed)::after {
-  filter: brightness(0) invert(1); 
+  filter: brightness(0) invert(1);
 }
 
 /* === Corps === */
 #faq .accordion-body {
-  background-color: #fff;
-  border-radius: 0 0 14px 14px;
-  box-shadow: inset 0 1px 3px rgba(0,0,0,0.08);
-  padding: 1.25rem 1.5rem;
-  color: #555;
+  background-color: transparent;
+  padding: 0 1.2rem 1.15rem 4.15rem;
+  color: #5e5e5e;
   font-size: 0.95rem;
   line-height: 1.7;
 }
@@ -881,7 +1005,17 @@ body {
 /* === CONTACT SECTION === */
 #contact {
   text-align: center;
-  padding: 60px 0;
+  padding: 70px 0 90px;
+}
+
+#contact .badge-text {
+  background: #333;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
 }
 
 #contact h2 {
@@ -889,62 +1023,86 @@ body {
   display: inline-block;
   color: #222;
   font-weight: 700;
-  margin-bottom: 2rem;
-  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-size: clamp(1.6rem, 2.2vw, 2rem);
   letter-spacing: 0.5px;
 }
 
-#contact h2::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 3px;
-  background: #333;
-  border-radius: 10px;
-}
-
 .contact-card {
-  background: #fff;
-  color: #333;
+  background: linear-gradient(180deg, #ffffff 0%, #fcfcfc 100%);
+  color: #222;
   text-decoration: none;
-  border-radius: 15px;
-  padding: 20px 30px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
-  width: 250px;
-  display: inline-block;
-  margin: 10px;
+  border-radius: 20px;
+  padding: 24px 24px 22px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.07);
+  border: 1px solid rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
+  min-height: 190px;
 }
 
+.contact-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 38px rgba(15, 23, 42, 0.12);
+  background: #111;
+  color: #fff;
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  margin-bottom: 14px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
 
 .contact-card i {
-  font-size: 2rem;
-  margin-bottom: 10px;
+  font-size: 1.35rem;
   color: #333;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
 }
 
 .contact-card span {
-  font-weight: 600;
-  font-size: 1.1rem;
+  font-weight: 700;
+  font-size: 1.05rem;
   display: block;
+  margin-bottom: 6px;
 }
 
 .contact-card small {
   color: #666;
   display: block;
+  line-height: 1.6;
+  margin-bottom: 14px;
+  transition: color 0.3s ease;
 }
 
-.contact-card:hover {
-  background: #333;
+.contact-card:hover .contact-icon {
+  background: rgba(255,255,255,0.16);
+}
+
+.contact-card:hover i,
+.contact-card:hover small {
   color: #fff;
-  transform: translateY(-5px);
 }
 
-.contact-card:hover i {
+.contact-pill {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(17, 24, 39, 0.06);
+  color: #444;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.contact-card:hover .contact-pill {
+  background: rgba(255,255,255,0.16);
   color: #fff;
 }
 
@@ -1129,15 +1287,44 @@ to {
 }
 
 [data-theme="dark"] .experience-card,
+[data-theme="dark"] #faq .accordion-item,
+[data-theme="dark"] #faq .accordion-button,
+[data-theme="dark"] #faq .accordion-body,
 [data-theme="dark"] .service-card,
 [data-theme="dark"] .profile-card-modern,
 [data-theme="dark"] .project-card,
-[data-theme="dark"] #faq .accordion-button,
-[data-theme="dark"] #faq .accordion-body,
 [data-theme="dark"] .contact-card {
   background: #1e1e1e !important;
   color: #f0f0f0 !important;
   border-color: rgba(255,255,255,0.08) !important;
+}
+
+[data-theme="dark"] #faq .accordion-item {
+  background: linear-gradient(180deg, #1f1f1f 0%, #181818 100%) !important;
+  box-shadow: 0 14px 34px rgba(0,0,0,0.24) !important;
+}
+
+[data-theme="dark"] #faq .accordion-button:hover {
+  background-color: rgba(255,255,255,0.04) !important;
+}
+
+[data-theme="dark"] #faq .accordion-button:not(.collapsed) {
+  background: #f0f0f0 !important;
+  color: #111 !important;
+}
+
+[data-theme="dark"] #faq .faq-icon {
+  background: rgba(255,255,255,0.08) !important;
+  color: #f0f0f0 !important;
+}
+
+[data-theme="dark"] #faq .accordion-button:not(.collapsed) .faq-icon i,
+[data-theme="dark"] #faq .accordion-button:not(.collapsed) .faq-icon {
+  color: #111 !important;
+}
+
+[data-theme="dark"] #faq .accordion-button:not(.collapsed) .faq-icon {
+  background: #f0f0f0 !important;
 }
 
 [data-theme="dark"] .experience-card h4,
@@ -1154,6 +1341,18 @@ to {
 
 [data-theme="dark"] p, [data-theme="dark"] .text-muted {
   color: #aaa !important;
+}
+
+[data-theme="dark"] .text-dark,
+[data-theme="dark"] .text-black,
+[data-theme="dark"] .fw-semibold.text-dark,
+[data-theme="dark"] .text-dark * {
+  color: #f0f0f0 !important;
+}
+
+[data-theme="dark"] .text-muted,
+[data-theme="dark"] .text-muted * {
+  color: #c8c8c8 !important;
 }
 
 [data-theme="dark"] .skills-category .modern-progress {

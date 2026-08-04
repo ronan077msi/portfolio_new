@@ -79,17 +79,18 @@ setTimeout(hidePreloader, 5000);
 // 3. AOS
 // ============================================
 document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('[data-aos-delay]').forEach(function(el) {
+    el.removeAttribute('data-aos-delay');
+  });
+
   if (typeof AOS !== 'undefined') {
     AOS.init({
       once: true,
       easing: 'ease-out-cubic',
-      // Start before the element reaches the viewport so it is not perceived
-      // as late while scrolling.
-      duration: 700,
-      offset: -120,
+      duration: 500,
+      offset: 18,
       delay: 0,
       anchorPlacement: 'top-bottom',
-      // AOS throttles scroll checks by 99 ms by default, which feels late.
       throttleDelay: 0,
       debounceDelay: 0,
     });
@@ -98,8 +99,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
 window.addEventListener('load', function() {
   if (typeof AOS !== 'undefined') {
-    // Recalculate positions after all images and layout changes have loaded.
-    AOS.refreshHard();
+    setTimeout(function() {
+      AOS.refreshHard();
+    }, 150);
+  }
+});
+
+window.addEventListener('resize', function() {
+  if (typeof AOS !== 'undefined') {
+    setTimeout(function() {
+      AOS.refreshHard();
+    }, 100);
   }
 });
 
@@ -222,34 +232,67 @@ document.addEventListener("DOMContentLoaded", function() {
 // ============================================
 // 9. DARK MODE (CORRIGÉ)
 // ============================================
-function toggleDark() {
+function applyTheme(theme, persist) {
   var html = document.documentElement;
-  var icon = document.getElementById('darkIcon');
-  var isDark = html.getAttribute('data-theme') === 'dark';
+  var isDark = theme === 'dark';
 
   if (isDark) {
-    html.removeAttribute('data-theme');
-    localStorage.setItem('theme', 'light');
-    if (icon) icon.className = 'bi bi-moon-fill';
-  } else {
     html.setAttribute('data-theme', 'dark');
-    localStorage.setItem('theme', 'dark');
-    if (icon) icon.className = 'bi bi-sun-fill';
+  } else {
+    html.removeAttribute('data-theme');
   }
+
+  if (persist) {
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  }
+
+  syncThemeButtons(isDark);
 }
 
-// Restaurer le thème au chargement
-(function() {
-  if (localStorage.getItem('theme') === 'dark') {
-    document.documentElement.setAttribute('data-theme', 'dark');
-  }
+function syncThemeButtons(isDark) {
+  document.querySelectorAll('[data-theme-toggle]').forEach(function(button) {
+    button.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+    button.setAttribute('title', isDark ? 'Activer le mode clair' : 'Activer le mode sombre');
 
-  var icon = document.getElementById('darkIcon');
-  if (icon) {
-    var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-    icon.className = isDark ? 'bi bi-sun-fill' : 'bi bi-moon-fill';
+    var icon = button.querySelector('i');
+    if (icon) {
+      icon.className = isDark ? 'bi bi-sun-fill' : 'bi bi-moon-fill';
+    }
+  });
+}
+
+function toggleDark() {
+  var html = document.documentElement;
+  var isDark = html.getAttribute('data-theme') === 'dark';
+  applyTheme(isDark ? 'light' : 'dark', true);
+}
+
+function initTheme() {
+  var savedTheme = localStorage.getItem('theme');
+  var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  var theme = savedTheme || (prefersDark ? 'dark' : 'light');
+  applyTheme(theme, false);
+}
+
+function bindThemeToggle() {
+  document.querySelectorAll('[data-theme-toggle]').forEach(function(button) {
+    button.addEventListener('click', function(e) {
+      e.preventDefault();
+      toggleDark();
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  initTheme();
+  bindThemeToggle();
+});
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+  if (!localStorage.getItem('theme')) {
+    applyTheme(e.matches ? 'dark' : 'light', false);
   }
-})();
+});
 
 // ============================================
 // 10. YEAR
