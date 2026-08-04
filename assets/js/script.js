@@ -88,11 +88,12 @@ document.addEventListener('DOMContentLoaded', function() {
       once: true,
       easing: 'ease-out-cubic',
       duration: 500,
-      offset: 18,
+      offset: 80,
       delay: 0,
       anchorPlacement: 'top-bottom',
       throttleDelay: 0,
       debounceDelay: 0,
+      startEvent: 'scroll',
     });
   }
 });
