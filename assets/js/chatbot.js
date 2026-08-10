@@ -1,14 +1,7 @@
-// ============================================================
-// CHATBOT PORTFOLIO RONAN - VERSION MINIMALISTE
-// FICHIER: chatbot.js
-// ============================================================
-
 (function() {
   'use strict';
 
-  // ============================================================
   // CONFIGURATION
-  // ============================================================
   const CONFIG = {
     welcomeMessage: "Bonjour 🙋🏻‍♂️\nJe suis l'assistant de Ronan. Comment puis-je vous aider aujourd'hui ?",
     
@@ -35,27 +28,21 @@
     ]
   };
 
-  // ============================================================
   // TIMING
-  // ============================================================
   const TIMING = {
     typingSpeed: 800,
     responseDelay: 500,
     chipDelay: 400
   };
 
-  // ============================================================
   // STATE
-  // ============================================================
   let state = {
     isOpen: false,
     messageCount: 0,
     currentStep: 'welcome'
   };
 
-  // ============================================================
   // DOM HELPERS
-  // ============================================================
   function createElement(tag, className, html = '') {
     const el = document.createElement(tag);
     if (className) el.className = className;
@@ -67,9 +54,7 @@
     return document.getElementById(id);
   }
 
-  // ============================================================
   // CHATBOT UI
-  // ============================================================
   function buildChatbotUI() {
     const styles = `
       <style>
@@ -522,9 +507,7 @@
     document.body.insertAdjacentHTML('beforeend', html);
   }
 
-  // ============================================================
   // CHATBOT LOGIC
-  // ============================================================
   function addMessage(text, type = 'bot', chips = null, isHTML = false) {
     const messages = getElement('chatbot-messages');
     if (!messages) return;
@@ -609,7 +592,7 @@
       label: chip.label,
       action: chip.id
     }));
-    addMessage("Que puis-je faire pour vous ?", 'bot', mainChips);
+    addMessage("Que puis-je faire d'autre pour vous ?", 'bot', mainChips);
     state.currentStep = 'welcome';
   }
 
@@ -621,7 +604,7 @@
 
       let response = '';
       let isHTML = false;
-      let shouldHideMenu = true; // Par défaut, on cache le menu
+      let shouldHideMenu = true;
 
       switch(action) {
         case 'projet':
@@ -630,7 +613,7 @@
             ' &nbsp;|&nbsp; ' +
             '✉️ <a href="' + CONFIG.links.email + '" class="link link-email">Email</a>';
           isHTML = true;
-          shouldHideMenu = false; // Seul "Devis" garde le menu
+          shouldHideMenu = false;
           break;
 
         case 'cv':
@@ -671,7 +654,7 @@
       addMessage(response, 'bot', null, isHTML);
 
       if (shouldHideMenu) {
-        // Menu caché - proposer de revenir
+        // Menu caché
         setTimeout(() => {
           const returnChips = [
             { label: '🔙 Retour au menu', action: 'menu' }
@@ -680,7 +663,7 @@
         }, 1000);
         state.currentStep = 'response';
       } else {
-        // Menu visible (cas du Devis)
+        // Menu visible 
         setTimeout(() => {
           if (state.currentStep !== 'response') {
             showMenu();
@@ -691,9 +674,7 @@
     }, TIMING.typingSpeed);
   }
 
-  // ============================================================
   // EVENT HANDLERS
-  // ============================================================
   function setupEventListeners() {
     const btn = getElement('chatbot-btn');
     const box = getElement('chatbot-box');
@@ -745,7 +726,7 @@
       });
     }
 
-    // Envoi de message texte
+    // texte
     function sendMessage() {
       if (!input) return;
       const msg = input.value.trim();
@@ -775,17 +756,13 @@
     }
   }
 
-  // ============================================================
   // INITIALISATION
-  // ============================================================
   function init() {
     buildChatbotUI();
     setupEventListeners();
   }
 
-  // ============================================================
-  // DÉMARRAGE - UNIQUEMENT SUR window.load
-  // ============================================================
+
   if (document.readyState === 'complete') {
     init();
   } else {
