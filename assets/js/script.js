@@ -1,45 +1,36 @@
-// ============================================
-// 1. TYPED ANIMATION
-// ============================================
+// Phrase d'introduction dynamique, avec un contenu initial lisible sans JavaScript.
 document.addEventListener("DOMContentLoaded", function() {
-  const typedSpan = document.querySelector(".typed");
-  if (!typedSpan) return;
+  const typedSpan = document.querySelector(".typed[data-typed-items]");
+  if (!typedSpan || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
-  const items = typedSpan.getAttribute("data-typed-items").split(",").map(i => i.trim());
-  let index = 0,
-    charIndex = 0,
-    isDeleting = false;
+  const items = typedSpan.dataset.typedItems.split(",").map(item => item.trim()).filter(Boolean);
+  if (items.length < 2) return;
 
-  function type() {
-    const fullText = items[index];
+  let itemIndex = 0;
+  let charIndex = items[0].length;
+  let deleting = true;
 
-    if (isDeleting) {
-      typedSpan.textContent = fullText.substring(0, charIndex--);
-    } else {
-      typedSpan.textContent = fullText.substring(0, charIndex++);
-    }
+  function typeNextCharacter() {
+    const current = items[itemIndex];
+    charIndex += deleting ? -1 : 1;
+    typedSpan.textContent = current.slice(0, charIndex);
 
-    if (!isDeleting && charIndex === fullText.length) {
-      isDeleting = true;
-      setTimeout(type, 800);
+    if (charIndex === 0 && deleting) {
+      deleting = false;
+      itemIndex = (itemIndex + 1) % items.length;
+    } else if (charIndex === items[itemIndex].length && !deleting) {
+      deleting = true;
+      window.setTimeout(typeNextCharacter, 1400);
       return;
     }
-
-    if (isDeleting && charIndex === 0) {
-      isDeleting = false;
-      index = (index + 1) % items.length;
-      setTimeout(type, 300);
-      return;
-    }
-
-    setTimeout(type, isDeleting ? 30 : 60);
+    window.setTimeout(typeNextCharacter, deleting ? 45 : 75);
   }
 
-  type();
+  window.setTimeout(typeNextCharacter, 1800);
 });
 
 // ============================================
-// 2. PRELOADER
+// 1. PRELOADER
 // ============================================
 function hidePreloader() {
   var preloader = document.getElementById('preloader');
@@ -76,7 +67,7 @@ if (document.readyState === 'complete') {
 setTimeout(hidePreloader, 5000);
 
 // ============================================
-// 3. AOS
+// 2. AOS
 // ============================================
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('[data-aos-delay]').forEach(function(el) {
@@ -113,28 +104,6 @@ window.addEventListener('resize', function() {
     }, 100);
   }
 });
-
-// ============================================
-// 4. PROGRESS BARS (CORRIGÉ)
-// ============================================
-function animateProgressBars() {
-  document.querySelectorAll('.progress-bar').forEach(function(bar) {
-    var rect = bar.getBoundingClientRect();
-    var isVisible = rect.top < window.innerHeight - 50;
-
-    if (isVisible && !bar.classList.contains('animated')) {
-      var value = bar.getAttribute('aria-valuenow');
-      bar.style.width = value + '%';
-      bar.classList.add('animated');
-    }
-  });
-}
-
-// Au chargement
-document.addEventListener('DOMContentLoaded', function() {
-  setTimeout(animateProgressBars, 500);
-});
-
 
 // ============================================
 // 5. ACTIVE NAV LINK (CORRIGÉ)
@@ -185,7 +154,6 @@ function handleViewportChange() {
 
   scrollTicking = true;
   window.requestAnimationFrame(function() {
-    animateProgressBars();
     updateActiveNav();
     updateNavbarScroll();
     scrollTicking = false;
