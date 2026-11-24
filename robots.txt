@@ -1,5 +1,11 @@
 User-agent: *
 Allow: /
 
-# Les ressources CSS, JavaScript et images sont nécessaires au rendu de la page.
+# Let crawlers fetch CSS, JavaScript, images, and the public CV PDF.
+Allow: /assets/
+Allow: /CV_Ronan_Andriamahenitsoa.pdf
+
+# Machine-readable site summary.
+# https://ronan77.vercel.app/llms.txt
+
 Sitemap: https://ronan77.vercel.app/sitemap.xml

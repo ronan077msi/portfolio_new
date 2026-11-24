@@ -2,8 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ronan77.vercel.app/</loc>
-    <lastmod>2026-07-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-11-24</lastmod>
+  </url>
+  <url>
+    <loc>https://ronan77.vercel.app/CV_Ronan_Andriamahenitsoa.pdf</loc>
+    <lastmod>2026-11-04</lastmod>
   </url>
 </urlset>

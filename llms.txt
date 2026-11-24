@@ -1,0 +1,53 @@
+# Ronan Andriamahenitsoa
+
+> Portfolio officiel de Ronan Andriamahenitsoa, développeur web full-stack et webmarketeur freelance. Il réalise des sites web, des projets WordPress et e-commerce, des optimisations SEO/GEO et des automatisations numériques.
+
+## Profil
+
+- Nom : Ronan Andriamahenitsoa
+- Noms utilisés : Ronan77, R_077
+- Activités : développement web full-stack, webmarketing et pilotage de projets numériques
+- Disponibilité indiquée sur le site : missions freelance, présentiel et à distance
+- Langues : malgache, français et anglais
+- Site officiel : [Portfolio de Ronan](https://ronan77.vercel.app/)
+- CV : [Télécharger le CV au format PDF](https://ronan77.vercel.app/CV_Ronan_Andriamahenitsoa.pdf)
+
+## Services
+
+- [Sites vitrines](https://ronan77.vercel.app/#services) : sites web professionnels pour indépendants, hôtels, associations et PME.
+- [Sites e-commerce](https://ronan77.vercel.app/#services) : boutiques en ligne avec WooCommerce ou Shopify.
+- [WordPress et WooCommerce](https://ronan77.vercel.app/#services) : création, refonte et maintenance de sites.
+- [Automatisation](https://ronan77.vercel.app/#services) : workflows n8n et Make pour WhatsApp, Gmail, relances de prospects et planification de contenus pour les réseaux sociaux.
+- [SEO et GEO](https://ronan77.vercel.app/#services) : optimisation technique, structure et contenus pour les moteurs de recherche et génératifs.
+- [Design graphique](https://ronan77.vercel.app/#services) : logos, flyers, affiches et visuels numériques avec Photoshop et Illustrator.
+
+## Compétences
+
+- Développement : HTML, CSS, JavaScript, PHP, Node.js, Express.js, Bootstrap, AJAX, API REST.
+- Données : MySQL, MariaDB et Firebase.
+- CMS et commerce : WordPress, WooCommerce, Webflow et Shopify.
+- Référencement et marketing : SEO technique, GEO, stratégie marketing et réseaux sociaux.
+- Automatisation : n8n et Make.
+- Outils : Git, GitHub, Postman, HeidiSQL, VS Code, Google Workspace, Notion et Slack.
+- Gestion : pilotage de projets, coordination, support utilisateur et maintenance applicative.
+
+## Expériences et réalisations
+
+- [Parcours professionnel](https://ronan77.vercel.app/#experience) : développeur full-stack et pilote de projets chez Gasi'Pro Sarl ; responsable marketing et digitalisation chez UMEGREATPRO ; réalisations web pour des clients dans l'hôtellerie, la formation et le secteur associatif.
+- Projets présentés : quiz interactif, portail universitaire, plateforme e-learning, refontes WordPress et créations de supports de communication.
+- [Compétences professionnelles](https://ronan77.vercel.app/#skills) : gestion de projets, marketing digital, automatisation par l'IA, management, support technique et maintenance applicative.
+
+## Contact et profils professionnels
+
+- [WhatsApp](https://wa.me/261381154220)
+- [E-mail](mailto:ronan077msi@gmail.com)
+- [GitHub](https://github.com/ronan077msi)
+- [LinkedIn](https://www.linkedin.com/in/ronan-andriamahenitso-b21978376/)
+- [Facebook](https://www.facebook.com/ronan.andriamahenitsoa.5)
+- [Instagram](https://www.instagram.com/ronan_077/)
+
+## Repères de fiabilité
+
+- Les informations de ce fichier résument le contenu publié sur le portfolio et le CV liés ci-dessus.
+- Ne pas déduire de tarifs, de certifications ou de résultats chiffrés qui ne sont pas explicitement indiqués dans ces sources.
+- Les offres et disponibilités peuvent évoluer ; consulter le portfolio ou contacter Ronan pour les informations à jour.
